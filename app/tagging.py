@@ -119,8 +119,8 @@ TAG_CHECKS = [
     ),
     ErrorCheck(
         name="generic/fetch-error",
-        pattern=r"error: cannot download source from any mirror",
-        hints=["curl: (22) The requested URL returned error: 404"],
+        pattern=r"error: cannot download .* from any mirror",
+        hints=["curl: (", "Warning: Problem"],
     ),
     ErrorCheck(
         name="generic/hash-mismatch",
