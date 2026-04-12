@@ -1,7 +1,6 @@
 import pathlib
 from contextlib import asynccontextmanager
 
-import os
 import orjson
 import uvicorn
 from fastapi import FastAPI, Query, Response
@@ -14,12 +13,15 @@ from .models import Build
 
 state = {}
 
+LAST_COMMIT_JSON = RUNTIME_DIR / "last-commit.json"
+
 
 @asynccontextmanager
 async def lifespan(_: FastAPI):
-    state["commit"] = orjson.loads(
-        (RUNTIME_DIR / "last-commit.json").read_text()
-    )
+    if LAST_COMMIT_JSON.exists():
+        state["commit"] = orjson.loads(LAST_COMMIT_JSON.read_text())
+    else:
+        state["commit"] = {}
 
     with next(get_db()) as session:
         rows = session.execute(
