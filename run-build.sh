@@ -9,8 +9,8 @@ INPUT_FILE="$1"
 NIXPKGS_PATH="$2"
 
 JOBS=$(nproc)
-TIMEOUT=30
-BATCH_SIZE=5000
+TIMEOUT="${3:-30}"
+BATCH_SIZE="${4:-5000}"
 LOG_DIR="$RUNTIME_DIR/build-logs"
 
 mkdir -p "$LOG_DIR"
