@@ -1,0 +1,209 @@
+this derivation will be built:
+  /nix/store/xiwa6ww5mj35z3s60r6apcw5i3gg4fan-python3.14-howdoi-2.0.20.drv
+these 5 paths will be fetched (2.36 MiB download, 3.30 MiB unpacked):
+  /nix/store/8ygl3m6i1l0c3c780b0rm824hrmi17m1-7d24e9e1c87811a6e66d60f504381383cf1ac3fd.patch
+  /nix/store/8d4nvsn9ykdl6g2dc6lk59k550li8czh-python3.14-keep-2.11
+  /nix/store/4nfl51162890v5y4s8xyakarjahkk1i2-python3.14-pyquery-2.0.1
+  /nix/store/p445aal9ajm7vbf8gi44ifn5b12dkrzd-python3.14-terminaltables3-4.0.0-unstable-2024-07-21
+  /nix/store/wyqf81apwqiskxibnj4gvzx1yls63apj-source
+copying path '/nix/store/8ygl3m6i1l0c3c780b0rm824hrmi17m1-7d24e9e1c87811a6e66d60f504381383cf1ac3fd.patch' from 'https://cache.nixos.org'...
+copying path '/nix/store/4nfl51162890v5y4s8xyakarjahkk1i2-python3.14-pyquery-2.0.1' from 'https://cache.nixos.org'...
+copying path '/nix/store/wyqf81apwqiskxibnj4gvzx1yls63apj-source' from 'https://cache.nixos.org'...
+copying path '/nix/store/p445aal9ajm7vbf8gi44ifn5b12dkrzd-python3.14-terminaltables3-4.0.0-unstable-2024-07-21' from 'https://cache.nixos.org'...
+copying path '/nix/store/8d4nvsn9ykdl6g2dc6lk59k550li8czh-python3.14-keep-2.11' from 'https://cache.nixos.org'...
+building '/nix/store/xiwa6ww5mj35z3s60r6apcw5i3gg4fan-python3.14-howdoi-2.0.20.drv'...
+Sourcing python-remove-tests-dir-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing python-remove-bin-bytecode-hook.sh
+Sourcing pypa-build-hook
+Using pypaBuildPhase
+Sourcing python-runtime-deps-check-hook
+Using pythonRuntimeDepsCheckHook
+Sourcing pypa-install-hook
+Using pypaInstallPhase
+Sourcing python-imports-check-hook.sh
+Using pythonImportsCheckPhase
+Sourcing python-namespaces-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing pytest-check-hook
+Using pytestCheckPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/wyqf81apwqiskxibnj4gvzx1yls63apj-source
+source root is source
+setting SOURCE_DATE_EPOCH to timestamp 315619200 of file "source/test_howdoi.py"
+Running phase: patchPhase
+applying patch /nix/store/8ygl3m6i1l0c3c780b0rm824hrmi17m1-7d24e9e1c87811a6e66d60f504381383cf1ac3fd.patch
+patching file test_howdoi.py
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+no configure script, doing nothing
+Running phase: buildPhase
+Executing pypaBuildPhase
+Creating a wheel...
+pypa build flags: --no-isolation --outdir dist/ --wheel
+* Getting build dependencies for wheel...
+/build/source/fastentrypoints.py:83: SetuptoolsDeprecationWarning: easy_install module is deprecated
+!!
+
+        ********************************************************************************
+        Avoid accessing attributes of setuptools.command.easy_install.
+
+        This deprecation is overdue, please update your project and remove deprecated
+        calls to avoid build errors in the future.
+
+        See https://github.com/pypa/setuptools/issues/4976 for details.
+        ********************************************************************************
+
+!!
+  easy_install.ScriptWriter.get_args = get_args
+running egg_info
+creating howdoi.egg-info
+writing howdoi.egg-info/PKG-INFO
+writing dependency_links to howdoi.egg-info/dependency_links.txt
+writing entry points to howdoi.egg-info/entry_points.txt
+writing requirements to howdoi.egg-info/requires.txt
+writing top-level names to howdoi.egg-info/top_level.txt
+writing manifest file 'howdoi.egg-info/SOURCES.txt'
+reading manifest file 'howdoi.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no previously-included files found matching 'howdoi.rb'
+warning: no previously-included files found matching '.*rc'
+no previously-included directories found matching 'page_cache'
+no previously-included directories found matching 'notebooks'
+adding license file 'LICENSE.txt'
+writing manifest file 'howdoi.egg-info/SOURCES.txt'
+* Building wheel...
+/build/source/fastentrypoints.py:83: SetuptoolsDeprecationWarning: easy_install module is deprecated
+!!
+
+        ********************************************************************************
+        Avoid accessing attributes of setuptools.command.easy_install.
+
+        This deprecation is overdue, please update your project and remove deprecated
+        calls to avoid build errors in the future.
+
+        See https://github.com/pypa/setuptools/issues/4976 for details.
+        ********************************************************************************
+
+!!
+  easy_install.ScriptWriter.get_args = get_args
+running bdist_wheel
+running build
+running build_py
+creating build/lib/howdoi
+copying howdoi/__main__.py -> build/lib/howdoi
+copying howdoi/__init__.py -> build/lib/howdoi
+copying howdoi/errors.py -> build/lib/howdoi
+copying howdoi/howdoi.py -> build/lib/howdoi
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/howdoi
+copying build/lib/howdoi/__main__.py -> build/bdist.linux-x86_64/wheel/./howdoi
+copying build/lib/howdoi/__init__.py -> build/bdist.linux-x86_64/wheel/./howdoi
+copying build/lib/howdoi/errors.py -> build/bdist.linux-x86_64/wheel/./howdoi
+copying build/lib/howdoi/howdoi.py -> build/bdist.linux-x86_64/wheel/./howdoi
+running install_egg_info
+running egg_info
+writing howdoi.egg-info/PKG-INFO
+writing dependency_links to howdoi.egg-info/dependency_links.txt
+writing entry points to howdoi.egg-info/entry_points.txt
+writing requirements to howdoi.egg-info/requires.txt
+writing top-level names to howdoi.egg-info/top_level.txt
+reading manifest file 'howdoi.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no previously-included files found matching 'howdoi.rb'
+warning: no previously-included files found matching '.*rc'
+no previously-included directories found matching 'page_cache'
+no previously-included directories found matching 'notebooks'
+adding license file 'LICENSE.txt'
+writing manifest file 'howdoi.egg-info/SOURCES.txt'
+Copying howdoi.egg-info to build/bdist.linux-x86_64/wheel/./howdoi-2.0.20-py3.14.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/howdoi-2.0.20.dist-info/WHEEL
+creating '/build/source/dist/.tmp-qshwjgzn/howdoi-2.0.20-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'howdoi/__init__.py'
+adding 'howdoi/__main__.py'
+adding 'howdoi/errors.py'
+adding 'howdoi/howdoi.py'
+adding 'howdoi-2.0.20.dist-info/licenses/LICENSE.txt'
+adding 'howdoi-2.0.20.dist-info/METADATA'
+adding 'howdoi-2.0.20.dist-info/WHEEL'
+adding 'howdoi-2.0.20.dist-info/entry_points.txt'
+adding 'howdoi-2.0.20.dist-info/top_level.txt'
+adding 'howdoi-2.0.20.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+Successfully built howdoi-2.0.20-py3-none-any.whl
+Finished creating a wheel...
+Finished executing pypaBuildPhase
+Running phase: pythonRuntimeDepsCheckHook
+Executing pythonRuntimeDepsCheck
+Checking runtime dependencies for howdoi-2.0.20-py3-none-any.whl
+Finished executing pythonRuntimeDepsCheck
+Running phase: installPhase
+Executing pypaInstallPhase
+Successfully installed howdoi-2.0.20-py3-none-any.whl
+Finished executing pypaInstallPhase
+Running phase: pythonOutputDistPhase
+Executing pythonOutputDistPhase
+Finished executing pythonOutputDistPhase
+Running phase: fixupPhase
+shrinking RPATHs of ELF executables and libraries in /nix/store/klh4hvmk95qsrg3v24xihqp9qdiqslr5-python3.14-howdoi-2.0.20
+checking for references to /build/ in /nix/store/klh4hvmk95qsrg3v24xihqp9qdiqslr5-python3.14-howdoi-2.0.20...
+patching script interpreter paths in /nix/store/klh4hvmk95qsrg3v24xihqp9qdiqslr5-python3.14-howdoi-2.0.20
+stripping (with command strip and flags -S -p) in  /nix/store/klh4hvmk95qsrg3v24xihqp9qdiqslr5-python3.14-howdoi-2.0.20/lib /nix/store/klh4hvmk95qsrg3v24xihqp9qdiqslr5-python3.14-howdoi-2.0.20/bin
+shrinking RPATHs of ELF executables and libraries in /nix/store/49a9rnpik212574ql41h7xlknl2j87iv-python3.14-howdoi-2.0.20-dist
+checking for references to /build/ in /nix/store/49a9rnpik212574ql41h7xlknl2j87iv-python3.14-howdoi-2.0.20-dist...
+patching script interpreter paths in /nix/store/49a9rnpik212574ql41h7xlknl2j87iv-python3.14-howdoi-2.0.20-dist
+Rewriting #!/nix/store/qr0wqh2damb6asnyz4jkx61id5yg3qh2-python3-3.14.3/bin/python3.14 to #!/nix/store/qr0wqh2damb6asnyz4jkx61id5yg3qh2-python3-3.14.3
+wrapping `/nix/store/klh4hvmk95qsrg3v24xihqp9qdiqslr5-python3.14-howdoi-2.0.20/bin/howdoi'...
+Executing pythonRemoveTestsDir
+Finished executing pythonRemoveTestsDir
+Running phase: installCheckPhase
+no Makefile or custom installCheckPhase, doing nothing
+Running phase: pythonCatchConflictsPhase
+Running phase: pythonRemoveBinBytecodePhase
+Running phase: pythonImportsCheckPhase
+Executing pythonImportsCheckPhase
+Check whether the following modules can be imported: howdoi
+Running phase: pytestCheckPhase
+Executing pytestCheckPhase
+pytest flags: -m pytest -k not\ \(test_colorize\)\ and\ not\ \(test_answer_links_using_l_option\)\ and\ not\ \(test_answers_bing\)\ and\ not\ \(test_answers\)\ and\ not\ \(test_json_output\)\ and\ not\ \(test_missing_pre_or_code_query\)\ and\ not\ \(test_multiple_answers\)\ and\ not\ \(test_position\)\ and\ not\ \(test_unicode_answer\)
+============================= test session starts ==============================
+platform linux -- Python 3.14.3, pytest-9.0.2, pluggy-1.6.0
+rootdir: /build/source
+collected 25 items / 9 deselected / 16 selected                                
+
+test_howdoi.py FF..............                                          [100%]
+
+=================================== FAILURES ===================================
+_________________________ HowdoiTestCase.test_all_text _________________________
+
+self = <test_howdoi.HowdoiTestCase testMethod=test_all_text>
+
+    def test_all_text(self):
+        query = self.queries[0]
+        first_answer = howdoi.howdoi(query)
+        second_answer = howdoi.howdoi(query + ' -a')
+>       self.assertNotEqual(first_answer, second_answer)
+E       AssertionError: 'ERROR: \x1b[91mUnable to reach google. Do you need to use a proxy?\n\x1b[0m' == 'ERROR: \x1b[91mUnable to reach google. Do you need to use a proxy?\n\x1b[0m'
+
+test_howdoi.py:174: AssertionError
+______________ HowdoiTestCase.test_answer_links_using_all_option _______________
+
+self = <test_howdoi.HowdoiTestCase testMethod=test_answer_links_using_all_option>
+
+    def test_answer_links_using_all_option(self):
+        for query in self.queries:
+            response = howdoi.howdoi(query + ' -a')
+>           self.assertNotEqual(re.match(r'.*http.?://.*questions/\d.*', response, re.DOTALL), None)
+E           AssertionError: None == None
+
+test_howdoi.py:162: AssertionError
+=========================== short test summary info ============================
+FAILED test_howdoi.py::HowdoiTestCase::test_all_text - AssertionError: 'ERROR: \x1b[91mUnable to reach google. Do you need to use ...
+FAILED test_howdoi.py::HowdoiTestCase::test_answer_links_using_all_option - AssertionError: None == None
+================== 2 failed, 14 passed, 9 deselected in 2.31s ==================
+error: builder for '/nix/store/xiwa6ww5mj35z3s60r6apcw5i3gg4fan-python3.14-howdoi-2.0.20.drv' failed with exit code 1
+@@@ [FAIL] @@@

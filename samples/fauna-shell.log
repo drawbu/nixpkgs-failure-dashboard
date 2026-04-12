@@ -1,0 +1,83 @@
+this derivation will be built:
+  /nix/store/wkggi7s56acz16q9dvkgqm5xb0zj49in-fauna-shell-4.0.0.drv
+these 3 paths will be fetched (27.80 MiB download, 36.32 MiB unpacked):
+  /nix/store/qdgi4q8a72zh8mw7z37xpjdrhx5j374p-esbuild-0.24.0
+  /nix/store/938vdqlwzhjcjld1a2zb6nz7kcvbd1gg-fauna-shell-4.0.0-npm-deps
+  /nix/store/nn9kfd3cq14fwgqggz83c2bk4cbwk17d-source
+copying path '/nix/store/938vdqlwzhjcjld1a2zb6nz7kcvbd1gg-fauna-shell-4.0.0-npm-deps' from 'https://cache.nixos.org'...
+copying path '/nix/store/qdgi4q8a72zh8mw7z37xpjdrhx5j374p-esbuild-0.24.0' from 'https://cache.nixos.org'...
+copying path '/nix/store/nn9kfd3cq14fwgqggz83c2bk4cbwk17d-source' from 'https://cache.nixos.org'...
+building '/nix/store/wkggi7s56acz16q9dvkgqm5xb0zj49in-fauna-shell-4.0.0.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/nn9kfd3cq14fwgqggz83c2bk4cbwk17d-source
+source root is source
+Running phase: patchPhase
+applying patch /nix/store/8k8gs489vchni9f32srgk8122i5v7zhv-package-lock-fix.patch
+patching file package-lock.json
+Executing npmConfigHook
+Configuring npm
+Validating consistency between /build/source/package-lock.json and /nix/store/938vdqlwzhjcjld1a2zb6nz7kcvbd1gg-fauna-shell-4.0.0-npm-deps/package-lock.json
+Setting npm_config_cache to /nix/store/938vdqlwzhjcjld1a2zb6nz7kcvbd1gg-fauna-shell-4.0.0-npm-deps
+Installing dependencies
+npm warn Unknown env config "nodedir". This will stop working in the next major version of npm.
+npm warn Unknown env config "platform". This will stop working in the next major version of npm.
+npm warn Unknown env config "arch". This will stop working in the next major version of npm.
+npm error code EUSAGE
+npm error
+npm error `npm ci` can only install packages when your package.json and package-lock.json or npm-shrinkwrap.json are in sync. Please update your lock file with `npm install` before continuing.
+npm error
+npm error Missing: @esbuild/aix-ppc64@ from lock file
+npm error Missing: @esbuild/android-arm@ from lock file
+npm error Missing: @esbuild/android-arm64@ from lock file
+npm error Missing: @esbuild/android-x64@ from lock file
+npm error Missing: @esbuild/darwin-x64@ from lock file
+npm error Missing: @esbuild/freebsd-arm64@ from lock file
+npm error Missing: @esbuild/freebsd-x64@ from lock file
+npm error Missing: @esbuild/linux-arm@ from lock file
+npm error Missing: @esbuild/linux-arm64@ from lock file
+npm error Missing: @esbuild/linux-ia32@ from lock file
+npm error Missing: @esbuild/linux-loong64@ from lock file
+npm error Missing: @esbuild/linux-mips64el@ from lock file
+npm error Missing: @esbuild/linux-ppc64@ from lock file
+npm error Missing: @esbuild/linux-riscv64@ from lock file
+npm error Missing: @esbuild/linux-s390x@ from lock file
+npm error Missing: @esbuild/linux-x64@ from lock file
+npm error Missing: @esbuild/netbsd-x64@ from lock file
+npm error Missing: @esbuild/openbsd-arm64@ from lock file
+npm error Missing: @esbuild/openbsd-x64@ from lock file
+npm error Missing: @esbuild/sunos-x64@ from lock file
+npm error Missing: @esbuild/win32-arm64@ from lock file
+npm error Missing: @esbuild/win32-ia32@ from lock file
+npm error Missing: @esbuild/win32-x64@ from lock file
+npm error
+npm error Clean install a project
+npm error
+npm error Usage:
+npm error npm ci
+npm error
+npm error Options:
+npm error [--install-strategy <hoisted|nested|shallow|linked>] [--legacy-bundling]
+npm error [--global-style] [--omit <dev|optional|peer> [--omit <dev|optional|peer> ...]]
+npm error [--include <prod|dev|optional|peer> [--include <prod|dev|optional|peer> ...]]
+npm error [--strict-peer-deps] [--foreground-scripts] [--ignore-scripts]
+npm error [--allow-git <all|none|root>] [--no-audit] [--no-bin-links] [--no-fund]
+npm error [--dry-run]
+npm error [-w|--workspace <workspace-name> [-w|--workspace <workspace-name> ...]]
+npm error [--workspaces] [--include-workspace-root] [--install-links]
+npm error
+npm error aliases: clean-install, ic, install-clean, isntall-clean
+npm error
+npm error Run "npm help ci" for more info
+npm error Log files were not written due to an error writing to the directory: /nix/store/938vdqlwzhjcjld1a2zb6nz7kcvbd1gg-fauna-shell-4.0.0-npm-deps/_logs
+npm error You can rerun the command with `--loglevel=verbose` to see the logs in your terminal
+
+ERROR: npm failed to install dependencies
+
+Here are a few things you can try, depending on the error:
+1. Set `npmDepsFetcherVersion = 2` (and update `npmDepsHash`)
+2. Set `makeCacheWritable = true`
+  Note that this won't help if npm is complaining about not being able to write to the logs directory -- look above that for the actual error.
+3. Set `npmFlags = [ "--legacy-peer-deps" ]`
+
+error: builder for '/nix/store/wkggi7s56acz16q9dvkgqm5xb0zj49in-fauna-shell-4.0.0.drv' failed with exit code 1
+@@@ [FAIL] @@@

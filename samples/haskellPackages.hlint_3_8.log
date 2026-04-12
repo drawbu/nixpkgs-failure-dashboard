@@ -1,0 +1,30 @@
+this derivation will be built:
+  /nix/store/b5yv2vsp0x5kla5dyx534597cf27vsjk-hlint-3.8.drv
+this path will be fetched (0.18 MiB download, 0.18 MiB unpacked):
+  /nix/store/pis4fasx0lr05s9lmm6bmdv177dsxsxm-hlint-3.8.tar.gz
+copying path '/nix/store/pis4fasx0lr05s9lmm6bmdv177dsxsxm-hlint-3.8.tar.gz' from 'https://cache.nixos.org'...
+building '/nix/store/b5yv2vsp0x5kla5dyx534597cf27vsjk-hlint-3.8.drv'...
+Running phase: setupCompilerEnvironmentPhase
+Build with /nix/store/71jpi5bf3l22gw0b56r8mfzlrxrrck1i-ghc-9.10.3.
+Running phase: unpackPhase
+unpacking source archive /nix/store/pis4fasx0lr05s9lmm6bmdv177dsxsxm-hlint-3.8.tar.gz
+source root is hlint-3.8
+setting SOURCE_DATE_EPOCH to timestamp 1000000000 of file "hlint-3.8/tests/wildcards.test"
+Running phase: patchPhase
+Running phase: compileBuildDriverPhase
+setupCompileFlags: -package-db=/build/tmp.1kMZbzhAGU/setup-package.conf.d -threaded
+[1 of 2] Compiling Main             ( Setup.hs, /build/tmp.1kMZbzhAGU/Main.o )
+[2 of 2] Linking Setup
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+configureFlags: --verbose --prefix=/nix/store/zpvslp9104pn6s3h7w6pd4dd4z17k7lf-hlint-3.8 --libdir=$prefix/lib/$compiler/lib --libsubdir=$abi/$libname --datadir=/nix/store/5csn3dpk0rgynip5hgvgnlir1l219q9i-hlint-3.8-data/share/ghc-9.10.3 --docdir=/nix/store/bwi1c1fdh6c8vyzflgigp73vzz311ndi-hlint-3.8-doc/share/doc/hlint-3.8 --with-gcc=gcc --package-db=/build/tmp.1kMZbzhAGU/package.conf.d --ghc-option=-j1 --ghc-option=+RTS --ghc-option=-A64M --ghc-option=-RTS --enable-library-profiling --profiling-detail=exported-functions --disable-profiling --enable-shared --disable-coverage --enable-static --disable-executable-dynamic --enable-tests --disable-benchmarks --enable-library-vanilla --disable-library-for-ghci --enable-split-sections --enable-library-stripping --enable-executable-stripping --ghc-option=-haddock --extra-lib-dirs=/nix/store/4zmr3iw5s719y5zz7h2dnym67x2i6n23-ncurses-6.6/lib --extra-lib-dirs=/nix/store/8zgy79sw0zjwfcfp78p883hkkdw0pdzs-libffi-3.5.2/lib --extra-lib-dirs=/nix/store/6nrfjqgkbgwjrszrn9dfv5k7kj7vxxfk-elfutils-0.194/lib --extra-lib-dirs=/nix/store/9q9777l352qfg127kwbfilali7mcynr1-gmp-with-cxx-6.3.0/lib --extra-lib-dirs=/nix/store/00p2pzg3i0bdlg9iab09jyr46lnvpi6n-numactl-2.0.18/lib
+Using Parsec parser
+Configuring hlint-3.8...
+Error: [Cabal-8010]
+Encountered missing or private dependencies:
+    ghc-lib-parser >=9.8 && <9.9, ghc-lib-parser-ex >=9.8.0.0 && <9.8.1
+CallStack (from HasCallStack):
+  dieWithException, called at libraries/Cabal/Cabal/src/Distribution/Simple/Configure.hs:1457:11 in Cabal-3.12.1.0-ee02:Distribution.Simple.Configure
+
+error: builder for '/nix/store/b5yv2vsp0x5kla5dyx534597cf27vsjk-hlint-3.8.drv' failed with exit code 1
+@@@ [FAIL] @@@

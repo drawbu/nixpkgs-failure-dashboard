@@ -1,0 +1,680 @@
+this derivation will be built:
+  /nix/store/8l7y6dpdg1gmrgndh3afgqyg7h0wfdir-python3.14-simple-dftd3-1.2.1.drv
+this path will be fetched (0.45 MiB download, 4.36 MiB unpacked):
+  /nix/store/46bzpvjxfzz7gq38xnrn41ckq1xlv6m1-source
+copying path '/nix/store/46bzpvjxfzz7gq38xnrn41ckq1xlv6m1-source' from 'https://cache.nixos.org'...
+building '/nix/store/8l7y6dpdg1gmrgndh3afgqyg7h0wfdir-python3.14-simple-dftd3-1.2.1.drv'...
+Sourcing python-remove-tests-dir-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing python-remove-bin-bytecode-hook.sh
+Sourcing setuptools-build-hook
+Using setuptoolsBuildPhase
+Sourcing pypa-install-hook
+Using pypaInstallPhase
+Sourcing python-imports-check-hook.sh
+Using pythonImportsCheckPhase
+Sourcing python-namespaces-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing pytest-check-hook
+Using pytestCheckPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/46bzpvjxfzz7gq38xnrn41ckq1xlv6m1-source
+source root is source
+setting SOURCE_DATE_EPOCH to timestamp 315619200 of file "source/test/validation/tester.py"
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+no configure script, doing nothing
+Running phase: buildPhase
+Executing setuptoolsBuildPhase
+setup.py build flags: ''
+running bdist_wheel
+running build
+running build_py
+creating build/lib.linux-x86_64-cpython-314/dftd3
+copying dftd3/test_interface.py -> build/lib.linux-x86_64-cpython-314/dftd3
+copying dftd3/test_qcschema.py -> build/lib.linux-x86_64-cpython-314/dftd3
+copying dftd3/parameters.py -> build/lib.linux-x86_64-cpython-314/dftd3
+copying dftd3/ase.py -> build/lib.linux-x86_64-cpython-314/dftd3
+copying dftd3/test_pyscf.py -> build/lib.linux-x86_64-cpython-314/dftd3
+copying dftd3/test_library.py -> build/lib.linux-x86_64-cpython-314/dftd3
+copying dftd3/pyscf.py -> build/lib.linux-x86_64-cpython-314/dftd3
+copying dftd3/test_ase.py -> build/lib.linux-x86_64-cpython-314/dftd3
+copying dftd3/interface.py -> build/lib.linux-x86_64-cpython-314/dftd3
+copying dftd3/test_parameters.py -> build/lib.linux-x86_64-cpython-314/dftd3
+copying dftd3/__init__.py -> build/lib.linux-x86_64-cpython-314/dftd3
+copying dftd3/library.py -> build/lib.linux-x86_64-cpython-314/dftd3
+copying dftd3/qcschema.py -> build/lib.linux-x86_64-cpython-314/dftd3
+running build_ext
+generating cffi module 'build/temp.linux-x86_64-cpython-314/dftd3._libdftd3.c'
+creating build/temp.linux-x86_64-cpython-314
+building 'dftd3._libdftd3' extension
+creating build/temp.linux-x86_64-cpython-314/build/temp.linux-x86_64-cpython-314
+gcc -fno-strict-overflow -Wsign-compare -DNDEBUG -g -O3 -Wall -fPIC -I/nix/store/qr0wqh2damb6asnyz4jkx61id5yg3qh2-python3-3.14.3/include/python3.14 -c build/temp.linux-x86_64-cpython-314/dftd3._libdftd3.c -o build/temp.linux-x86_64-cpython-314/build/temp.linux-x86_64-cpython-314/dftd3._libdftd3.o
+gcc -shared -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-bzip2-1.0.8/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libffi-3.5.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-util-linux-minimal-2.41.3-lib/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ncurses-6.6/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-xz-5.8.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-zlib-1.3.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-openssl-3.6.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-sqlite-3.51.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpdecimal-4.0.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-expat-2.7.4/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-zstd-1.5.7/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-bluez-headers-5.84/lib -L/nix/store/h15ranlgwagilr6ajd7ich6d896kf9zd-tzdata-2026a/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gdbm-1.26-lib/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-readline-8.3p3/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-bzip2-1.0.8/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libffi-3.5.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-util-linux-minimal-2.41.3-lib/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-ncurses-6.6/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-xz-5.8.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-zlib-1.3.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-openssl-3.6.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-sqlite-3.51.2/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpdecimal-4.0.1/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-expat-2.7.4/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-zstd-1.5.7/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-bluez-headers-5.84/lib -L/nix/store/h15ranlgwagilr6ajd7ich6d896kf9zd-tzdata-2026a/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gdbm-1.26-lib/lib -L/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-readline-8.3p3/lib build/temp.linux-x86_64-cpython-314/build/temp.linux-x86_64-cpython-314/dftd3._libdftd3.o -L/nix/store/qr0wqh2damb6asnyz4jkx61id5yg3qh2-python3-3.14.3/lib -ls-dftd3 -o build/lib.linux-x86_64-cpython-314/dftd3/_libdftd3.abi3.so
+/nix/store/3zawkmdk3bs97lwkinfq5lsffikyh39d-python3.14-setuptools-80.10.1/lib/python3.14/site-packages/setuptools/_distutils/cmd.py:90: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        This deprecation is overdue, please update your project and remove deprecated
+        calls to avoid build errors in the future.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/dftd3
+copying build/lib.linux-x86_64-cpython-314/dftd3/test_interface.py -> build/bdist.linux-x86_64/wheel/./dftd3
+copying build/lib.linux-x86_64-cpython-314/dftd3/test_qcschema.py -> build/bdist.linux-x86_64/wheel/./dftd3
+copying build/lib.linux-x86_64-cpython-314/dftd3/parameters.py -> build/bdist.linux-x86_64/wheel/./dftd3
+copying build/lib.linux-x86_64-cpython-314/dftd3/ase.py -> build/bdist.linux-x86_64/wheel/./dftd3
+copying build/lib.linux-x86_64-cpython-314/dftd3/test_pyscf.py -> build/bdist.linux-x86_64/wheel/./dftd3
+copying build/lib.linux-x86_64-cpython-314/dftd3/test_library.py -> build/bdist.linux-x86_64/wheel/./dftd3
+copying build/lib.linux-x86_64-cpython-314/dftd3/pyscf.py -> build/bdist.linux-x86_64/wheel/./dftd3
+copying build/lib.linux-x86_64-cpython-314/dftd3/test_ase.py -> build/bdist.linux-x86_64/wheel/./dftd3
+copying build/lib.linux-x86_64-cpython-314/dftd3/interface.py -> build/bdist.linux-x86_64/wheel/./dftd3
+copying build/lib.linux-x86_64-cpython-314/dftd3/test_parameters.py -> build/bdist.linux-x86_64/wheel/./dftd3
+copying build/lib.linux-x86_64-cpython-314/dftd3/__init__.py -> build/bdist.linux-x86_64/wheel/./dftd3
+copying build/lib.linux-x86_64-cpython-314/dftd3/library.py -> build/bdist.linux-x86_64/wheel/./dftd3
+copying build/lib.linux-x86_64-cpython-314/dftd3/_libdftd3.abi3.so -> build/bdist.linux-x86_64/wheel/./dftd3
+copying build/lib.linux-x86_64-cpython-314/dftd3/qcschema.py -> build/bdist.linux-x86_64/wheel/./dftd3
+running install_egg_info
+running egg_info
+creating dftd3.egg-info
+writing dftd3.egg-info/PKG-INFO
+writing dependency_links to dftd3.egg-info/dependency_links.txt
+writing requirements to dftd3.egg-info/requires.txt
+writing top-level names to dftd3.egg-info/top_level.txt
+writing manifest file 'dftd3.egg-info/SOURCES.txt'
+reading manifest file 'dftd3.egg-info/SOURCES.txt'
+adding license file 'COPYING'
+adding license file 'COPYING.LESSER'
+writing manifest file 'dftd3.egg-info/SOURCES.txt'
+Copying dftd3.egg-info to build/bdist.linux-x86_64/wheel/./dftd3-1.2.1-py3.14.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/dftd3-1.2.1.dist-info/WHEEL
+creating 'dist/dftd3-1.2.1-cp314-cp314-linux_x86_64.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'dftd3/__init__.py'
+adding 'dftd3/_libdftd3.abi3.so'
+adding 'dftd3/ase.py'
+adding 'dftd3/interface.py'
+adding 'dftd3/library.py'
+adding 'dftd3/parameters.py'
+adding 'dftd3/pyscf.py'
+adding 'dftd3/qcschema.py'
+adding 'dftd3/test_ase.py'
+adding 'dftd3/test_interface.py'
+adding 'dftd3/test_library.py'
+adding 'dftd3/test_parameters.py'
+adding 'dftd3/test_pyscf.py'
+adding 'dftd3/test_qcschema.py'
+adding 'dftd3-1.2.1.dist-info/licenses/COPYING'
+adding 'dftd3-1.2.1.dist-info/licenses/COPYING.LESSER'
+adding 'dftd3-1.2.1.dist-info/METADATA'
+adding 'dftd3-1.2.1.dist-info/WHEEL'
+adding 'dftd3-1.2.1.dist-info/top_level.txt'
+adding 'dftd3-1.2.1.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+Finished executing setuptoolsBuildPhase
+Running phase: installPhase
+Executing pypaInstallPhase
+Successfully installed dftd3-1.2.1-cp314-cp314-linux_x86_64.whl
+Finished executing pypaInstallPhase
+Running phase: pythonOutputDistPhase
+Executing pythonOutputDistPhase
+Finished executing pythonOutputDistPhase
+Running phase: fixupPhase
+shrinking RPATHs of ELF executables and libraries in /nix/store/mmhgwllchcw0r1rvsr5b8yis5mcrmr45-python3.14-simple-dftd3-1.2.1
+shrinking /nix/store/mmhgwllchcw0r1rvsr5b8yis5mcrmr45-python3.14-simple-dftd3-1.2.1/lib/python3.14/site-packages/dftd3/_libdftd3.abi3.so
+checking for references to /build/ in /nix/store/mmhgwllchcw0r1rvsr5b8yis5mcrmr45-python3.14-simple-dftd3-1.2.1...
+patching script interpreter paths in /nix/store/mmhgwllchcw0r1rvsr5b8yis5mcrmr45-python3.14-simple-dftd3-1.2.1
+stripping (with command strip and flags -S -p) in  /nix/store/mmhgwllchcw0r1rvsr5b8yis5mcrmr45-python3.14-simple-dftd3-1.2.1/lib
+shrinking RPATHs of ELF executables and libraries in /nix/store/z0haimfpxxk73yiz98klzm3cwpicfvyk-python3.14-simple-dftd3-1.2.1-dist
+checking for references to /build/ in /nix/store/z0haimfpxxk73yiz98klzm3cwpicfvyk-python3.14-simple-dftd3-1.2.1-dist...
+patching script interpreter paths in /nix/store/z0haimfpxxk73yiz98klzm3cwpicfvyk-python3.14-simple-dftd3-1.2.1-dist
+Executing pythonRemoveTestsDir
+Finished executing pythonRemoveTestsDir
+Running phase: installCheckPhase
+no Makefile or custom installCheckPhase, doing nothing
+Running phase: pythonCatchConflictsPhase
+Running phase: pythonRemoveBinBytecodePhase
+Running phase: pythonImportsCheckPhase
+Executing pythonImportsCheckPhase
+Check whether the following modules can be imported: dftd3
+Running phase: pytestCheckPhase
+Executing pytestCheckPhase
+pytest flags: -m pytest
+============================= test session starts ==============================
+platform linux -- Python 3.14.3, pytest-9.0.2, pluggy-1.6.0
+rootdir: /build/source/python
+collected 45 items                                                             
+
+dftd3/test_ase.py ..                                                     [  4%]
+dftd3/test_interface.py .................                                [ 42%]
+dftd3/test_library.py .                                                  [ 44%]
+dftd3/test_parameters.py ....                                            [ 53%]
+dftd3/test_pyscf.py ...........                                          [ 77%]
+dftd3/test_qcschema.py FFFFFFFFFF                                        [100%]
+
+=================================== FAILURES ===================================
+________________________ test_energy_r2scan_d3bj[True] _________________________
+
+atm = True
+
+    @pytest.mark.skipif(qcel is None, reason="requires qcelemental")
+    @mark.parametrize("atm", [True, False])
+    def test_energy_r2scan_d3bj(atm):
+        thr = 1e-9
+    
+>       atomic_input = qcel.models.AtomicInput(
+            molecule={
+                "symbols": "C C C C C C I H H H H H S H C H H H".split(" "),
+                "geometry": [
+                    [-1.42754169820131, -1.50508961850828, -1.93430551124333],
+                    [+1.19860572924150, -1.66299114873979, -2.03189643761298],
+                    [+2.65876001301880, +0.37736955363609, -1.23426391650599],
+                    [+1.50963368042358, +2.57230374419743, -0.34128058818180],
+                    [-1.12092277855371, +2.71045691257517, -0.25246348639234],
+                    [-2.60071517756218, +0.67879949508239, -1.04550707592673],
+                    [-2.86169588073340, +5.99660765711210, +1.08394899986031],
+                    [+2.09930989272956, -3.36144811062374, -2.72237695164263],
+                    [+2.64405246349916, +4.15317840474646, +0.27856972788526],
+                    [+4.69864865613751, +0.26922271535391, -1.30274048619151],
+                    [-4.63786461351839, +0.79856258572808, -0.96906659938432],
+                    [-2.57447518692275, -3.08132039046931, -2.54875517521577],
+                    [-5.88211879210329, 11.88491819358157, +2.31866455902233],
+                    [-8.18022701418703, 10.95619984550779, +1.83940856333092],
+                    [-5.08172874482867, 12.66714386256482, -0.92419491629867],
+                    [-3.18311711399702, 13.44626574330220, -0.86977613647871],
+                    [-5.07177399637298, 10.99164969235585, -2.10739192258756],
+                    [-6.35955320518616, 14.08073002965080, -1.68204314084441],
+                ],
+            },
+            driver="energy",
+            model={
+                "method": "",
+            },
+            keywords={
+                "params_tweaks": {
+                    "method": "r2scan",
+                    "atm": atm,
+                },
+            },
+        )
+
+dftd3/test_qcschema.py:33: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <Unavailable QCSchema v1 model AtomicInput>, args = ()
+kwargs = {'driver': 'energy', 'keywords': {'params_tweaks': {'atm': True, 'method': 'r2scan'}}, 'model': {'method': ''}, 'molec...9234], [-2.60071517756218, 0.67879949508239, -1.04550707592673], ...], 'symbols': ['C', 'C', 'C', 'C', 'C', 'C', ...]}}
+
+    def __init__(self, *args, **kwargs):
+>       raise RuntimeError(_MSG2)
+E       RuntimeError: QCSchema v1 model 'AtomicInput' cannot be instantiated in this environment. Reason: pydantic.v1 is unavailable on Python 3.14+. Use qcelemental.models.v2 or run Python <3.14. See docs/MIGRATION.md
+
+/nix/store/p6p6fc0n3553synah6kx1zkmbh9vgv59-python3.14-qcelemental-0.50.0rc3/lib/python3.14/site-packages/qcelemental/models/v1/__init__.py:48: RuntimeError
+________________________ test_energy_r2scan_d3bj[False] ________________________
+
+atm = False
+
+    @pytest.mark.skipif(qcel is None, reason="requires qcelemental")
+    @mark.parametrize("atm", [True, False])
+    def test_energy_r2scan_d3bj(atm):
+        thr = 1e-9
+    
+>       atomic_input = qcel.models.AtomicInput(
+            molecule={
+                "symbols": "C C C C C C I H H H H H S H C H H H".split(" "),
+                "geometry": [
+                    [-1.42754169820131, -1.50508961850828, -1.93430551124333],
+                    [+1.19860572924150, -1.66299114873979, -2.03189643761298],
+                    [+2.65876001301880, +0.37736955363609, -1.23426391650599],
+                    [+1.50963368042358, +2.57230374419743, -0.34128058818180],
+                    [-1.12092277855371, +2.71045691257517, -0.25246348639234],
+                    [-2.60071517756218, +0.67879949508239, -1.04550707592673],
+                    [-2.86169588073340, +5.99660765711210, +1.08394899986031],
+                    [+2.09930989272956, -3.36144811062374, -2.72237695164263],
+                    [+2.64405246349916, +4.15317840474646, +0.27856972788526],
+                    [+4.69864865613751, +0.26922271535391, -1.30274048619151],
+                    [-4.63786461351839, +0.79856258572808, -0.96906659938432],
+                    [-2.57447518692275, -3.08132039046931, -2.54875517521577],
+                    [-5.88211879210329, 11.88491819358157, +2.31866455902233],
+                    [-8.18022701418703, 10.95619984550779, +1.83940856333092],
+                    [-5.08172874482867, 12.66714386256482, -0.92419491629867],
+                    [-3.18311711399702, 13.44626574330220, -0.86977613647871],
+                    [-5.07177399637298, 10.99164969235585, -2.10739192258756],
+                    [-6.35955320518616, 14.08073002965080, -1.68204314084441],
+                ],
+            },
+            driver="energy",
+            model={
+                "method": "",
+            },
+            keywords={
+                "params_tweaks": {
+                    "method": "r2scan",
+                    "atm": atm,
+                },
+            },
+        )
+
+dftd3/test_qcschema.py:33: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <Unavailable QCSchema v1 model AtomicInput>, args = ()
+kwargs = {'driver': 'energy', 'keywords': {'params_tweaks': {'atm': False, 'method': 'r2scan'}}, 'model': {'method': ''}, 'mole...9234], [-2.60071517756218, 0.67879949508239, -1.04550707592673], ...], 'symbols': ['C', 'C', 'C', 'C', 'C', 'C', ...]}}
+
+    def __init__(self, *args, **kwargs):
+>       raise RuntimeError(_MSG2)
+E       RuntimeError: QCSchema v1 model 'AtomicInput' cannot be instantiated in this environment. Reason: pydantic.v1 is unavailable on Python 3.14+. Use qcelemental.models.v2 or run Python <3.14. See docs/MIGRATION.md
+
+/nix/store/p6p6fc0n3553synah6kx1zkmbh9vgv59-python3.14-qcelemental-0.50.0rc3/lib/python3.14/site-packages/qcelemental/models/v1/__init__.py:48: RuntimeError
+_________________________ test_energy_bp_d3zero[True] __________________________
+
+atm = True
+
+    @pytest.mark.skipif(qcel is None, reason="requires qcelemental")
+    @mark.parametrize("atm", [True, False])
+    def test_energy_bp_d3zero(atm):
+        thr = 1e-9
+    
+>       atomic_input = qcel.models.AtomicInput(
+            molecule={
+                "symbols": "C C C C C C I H H H H H S H C H H H".split(" "),
+                "geometry": [
+                    [-1.42754169820131, -1.50508961850828, -1.93430551124333],
+                    [+1.19860572924150, -1.66299114873979, -2.03189643761298],
+                    [+2.65876001301880, +0.37736955363609, -1.23426391650599],
+                    [+1.50963368042358, +2.57230374419743, -0.34128058818180],
+                    [-1.12092277855371, +2.71045691257517, -0.25246348639234],
+                    [-2.60071517756218, +0.67879949508239, -1.04550707592673],
+                    [-2.86169588073340, +5.99660765711210, +1.08394899986031],
+                    [+2.09930989272956, -3.36144811062374, -2.72237695164263],
+                    [+2.64405246349916, +4.15317840474646, +0.27856972788526],
+                    [+4.69864865613751, +0.26922271535391, -1.30274048619151],
+                    [-4.63786461351839, +0.79856258572808, -0.96906659938432],
+                    [-2.57447518692275, -3.08132039046931, -2.54875517521577],
+                    [-5.88211879210329, 11.88491819358157, +2.31866455902233],
+                    [-8.18022701418703, 10.95619984550779, +1.83940856333092],
+                    [-5.08172874482867, 12.66714386256482, -0.92419491629867],
+                    [-3.18311711399702, 13.44626574330220, -0.86977613647871],
+                    [-5.07177399637298, 10.99164969235585, -2.10739192258756],
+                    [-6.35955320518616, 14.08073002965080, -1.68204314084441],
+                ],
+            },
+            driver="energy",
+            model={"method": ""},
+            keywords={
+                "params_tweaks": {
+                    "s8": 1.683,
+                    "rs6": 1.139,
+                    "s9": 1.0 if atm else 0.0,
+                },
+                "level_hint": "d3zero",
+            },
+        )
+
+dftd3/test_qcschema.py:81: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <Unavailable QCSchema v1 model AtomicInput>, args = ()
+kwargs = {'driver': 'energy', 'keywords': {'level_hint': 'd3zero', 'params_tweaks': {'rs6': 1.139, 's8': 1.683, 's9': 1.0}}, 'm...9234], [-2.60071517756218, 0.67879949508239, -1.04550707592673], ...], 'symbols': ['C', 'C', 'C', 'C', 'C', 'C', ...]}}
+
+    def __init__(self, *args, **kwargs):
+>       raise RuntimeError(_MSG2)
+E       RuntimeError: QCSchema v1 model 'AtomicInput' cannot be instantiated in this environment. Reason: pydantic.v1 is unavailable on Python 3.14+. Use qcelemental.models.v2 or run Python <3.14. See docs/MIGRATION.md
+
+/nix/store/p6p6fc0n3553synah6kx1zkmbh9vgv59-python3.14-qcelemental-0.50.0rc3/lib/python3.14/site-packages/qcelemental/models/v1/__init__.py:48: RuntimeError
+_________________________ test_energy_bp_d3zero[False] _________________________
+
+atm = False
+
+    @pytest.mark.skipif(qcel is None, reason="requires qcelemental")
+    @mark.parametrize("atm", [True, False])
+    def test_energy_bp_d3zero(atm):
+        thr = 1e-9
+    
+>       atomic_input = qcel.models.AtomicInput(
+            molecule={
+                "symbols": "C C C C C C I H H H H H S H C H H H".split(" "),
+                "geometry": [
+                    [-1.42754169820131, -1.50508961850828, -1.93430551124333],
+                    [+1.19860572924150, -1.66299114873979, -2.03189643761298],
+                    [+2.65876001301880, +0.37736955363609, -1.23426391650599],
+                    [+1.50963368042358, +2.57230374419743, -0.34128058818180],
+                    [-1.12092277855371, +2.71045691257517, -0.25246348639234],
+                    [-2.60071517756218, +0.67879949508239, -1.04550707592673],
+                    [-2.86169588073340, +5.99660765711210, +1.08394899986031],
+                    [+2.09930989272956, -3.36144811062374, -2.72237695164263],
+                    [+2.64405246349916, +4.15317840474646, +0.27856972788526],
+                    [+4.69864865613751, +0.26922271535391, -1.30274048619151],
+                    [-4.63786461351839, +0.79856258572808, -0.96906659938432],
+                    [-2.57447518692275, -3.08132039046931, -2.54875517521577],
+                    [-5.88211879210329, 11.88491819358157, +2.31866455902233],
+                    [-8.18022701418703, 10.95619984550779, +1.83940856333092],
+                    [-5.08172874482867, 12.66714386256482, -0.92419491629867],
+                    [-3.18311711399702, 13.44626574330220, -0.86977613647871],
+                    [-5.07177399637298, 10.99164969235585, -2.10739192258756],
+                    [-6.35955320518616, 14.08073002965080, -1.68204314084441],
+                ],
+            },
+            driver="energy",
+            model={"method": ""},
+            keywords={
+                "params_tweaks": {
+                    "s8": 1.683,
+                    "rs6": 1.139,
+                    "s9": 1.0 if atm else 0.0,
+                },
+                "level_hint": "d3zero",
+            },
+        )
+
+dftd3/test_qcschema.py:81: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <Unavailable QCSchema v1 model AtomicInput>, args = ()
+kwargs = {'driver': 'energy', 'keywords': {'level_hint': 'd3zero', 'params_tweaks': {'rs6': 1.139, 's8': 1.683, 's9': 0.0}}, 'm...9234], [-2.60071517756218, 0.67879949508239, -1.04550707592673], ...], 'symbols': ['C', 'C', 'C', 'C', 'C', 'C', ...]}}
+
+    def __init__(self, *args, **kwargs):
+>       raise RuntimeError(_MSG2)
+E       RuntimeError: QCSchema v1 model 'AtomicInput' cannot be instantiated in this environment. Reason: pydantic.v1 is unavailable on Python 3.14+. Use qcelemental.models.v2 or run Python <3.14. See docs/MIGRATION.md
+
+/nix/store/p6p6fc0n3553synah6kx1zkmbh9vgv59-python3.14-qcelemental-0.50.0rc3/lib/python3.14/site-packages/qcelemental/models/v1/__init__.py:48: RuntimeError
+___________________________ test_gradient_b97d_d3bj ____________________________
+
+    @pytest.mark.skipif(qcel is None, reason="requires qcelemental")
+    def test_gradient_b97d_d3bj():
+        thr = 1e-9
+    
+>       atomic_input = qcel.models.AtomicInput(
+            molecule={
+                "symbols": "C C C C C C I H H H H H S H C H H H".split(" "),
+                "geometry": [
+                    [-1.42754169820131, -1.50508961850828, -1.93430551124333],
+                    [+1.19860572924150, -1.66299114873979, -2.03189643761298],
+                    [+2.65876001301880, +0.37736955363609, -1.23426391650599],
+                    [+1.50963368042358, +2.57230374419743, -0.34128058818180],
+                    [-1.12092277855371, +2.71045691257517, -0.25246348639234],
+                    [-2.60071517756218, +0.67879949508239, -1.04550707592673],
+                    [-2.86169588073340, +5.99660765711210, +1.08394899986031],
+                    [+2.09930989272956, -3.36144811062374, -2.72237695164263],
+                    [+2.64405246349916, +4.15317840474646, +0.27856972788526],
+                    [+4.69864865613751, +0.26922271535391, -1.30274048619151],
+                    [-4.63786461351839, +0.79856258572808, -0.96906659938432],
+                    [-2.57447518692275, -3.08132039046931, -2.54875517521577],
+                    [-5.88211879210329, 11.88491819358157, +2.31866455902233],
+                    [-8.18022701418703, 10.95619984550779, +1.83940856333092],
+                    [-5.08172874482867, 12.66714386256482, -0.92419491629867],
+                    [-3.18311711399702, 13.44626574330220, -0.86977613647871],
+                    [-5.07177399637298, 10.99164969235585, -2.10739192258756],
+                    [-6.35955320518616, 14.08073002965080, -1.68204314084441],
+                ],
+            },
+            driver="gradient",
+            model={
+                "method": "b97d-d3(bj)",
+            },
+            keywords={},
+        )
+
+dftd3/test_qcschema.py:128: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <Unavailable QCSchema v1 model AtomicInput>, args = ()
+kwargs = {'driver': 'gradient', 'keywords': {}, 'model': {'method': 'b97d-d3(bj)'}, 'molecule': {'geometry': [[-1.4275416982013...9234], [-2.60071517756218, 0.67879949508239, -1.04550707592673], ...], 'symbols': ['C', 'C', 'C', 'C', 'C', 'C', ...]}}
+
+    def __init__(self, *args, **kwargs):
+>       raise RuntimeError(_MSG2)
+E       RuntimeError: QCSchema v1 model 'AtomicInput' cannot be instantiated in this environment. Reason: pydantic.v1 is unavailable on Python 3.14+. Use qcelemental.models.v2 or run Python <3.14. See docs/MIGRATION.md
+
+/nix/store/p6p6fc0n3553synah6kx1zkmbh9vgv59-python3.14-qcelemental-0.50.0rc3/lib/python3.14/site-packages/qcelemental/models/v1/__init__.py:48: RuntimeError
+__________________________ test_gradient_tpss_d3zero ___________________________
+
+    @pytest.mark.skipif(qcel is None, reason="requires qcelemental")
+    def test_gradient_tpss_d3zero():
+        thr = 1.0e-9
+    
+>       atomic_input = qcel.models.AtomicInput(
+            molecule={
+                "symbols": "O C C F O F H".split(),
+                "geometry": [
+                    [+4.877023733, -3.909030492, +1.796260143],
+                    [+6.112318716, -2.778558610, +0.091330457],
+                    [+7.360520527, -4.445334728, -1.932830640],
+                    [+7.978801077, -6.767751279, -1.031771494],
+                    [+6.374499300, -0.460299457, -0.213142194],
+                    [+5.637581753, -4.819746139, -3.831249370],
+                    [+9.040657008, -3.585225944, -2.750722946],
+                ],
+                "molecular_charge": -1,
+            },
+            driver="gradient",
+            model={
+                "method": "",
+            },
+            keywords={
+                "params_tweaks": {
+                    "sr6": 1.166,
+                    "s8": 1.105,
+                    "alpha6": 14.0,
+                },
+                "level_hint": "d3zero",
+            },
+        )
+
+dftd3/test_qcschema.py:192: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <Unavailable QCSchema v1 model AtomicInput>, args = ()
+kwargs = {'driver': 'gradient', 'keywords': {'level_hint': 'd3zero', 'params_tweaks': {'alpha6': 14.0, 's8': 1.105, 'sr6': 1.16...5.637581753, -4.819746139, -3.83124937], ...], 'molecular_charge': -1, 'symbols': ['O', 'C', 'C', 'F', 'O', 'F', ...]}}
+
+    def __init__(self, *args, **kwargs):
+>       raise RuntimeError(_MSG2)
+E       RuntimeError: QCSchema v1 model 'AtomicInput' cannot be instantiated in this environment. Reason: pydantic.v1 is unavailable on Python 3.14+. Use qcelemental.models.v2 or run Python <3.14. See docs/MIGRATION.md
+
+/nix/store/p6p6fc0n3553synah6kx1zkmbh9vgv59-python3.14-qcelemental-0.50.0rc3/lib/python3.14/site-packages/qcelemental/models/v1/__init__.py:48: RuntimeError
+______________________________ test_error_noargs _______________________________
+
+    @pytest.mark.skipif(qcel is None, reason="requires qcelemental")
+    def test_error_noargs():
+        thr = 1e-9
+    
+>       atomic_input = qcel.models.AtomicInput(
+            molecule={
+                "symbols": "C C C C N C S H H H H H".split(),
+                "geometry": [
+                    [-2.56745685564671, -0.02509985979910, 0.00000000000000],
+                    [-1.39177582455797, +2.27696188880014, 0.00000000000000],
+                    [+1.27784995624894, +2.45107479759386, 0.00000000000000],
+                    [+2.62801937615793, +0.25927727028120, 0.00000000000000],
+                    [+1.41097033661123, -1.99890996077412, 0.00000000000000],
+                    [-1.17186102298849, -2.34220576284180, 0.00000000000000],
+                    [-2.39505990368378, -5.22635838332362, 0.00000000000000],
+                    [+2.41961980455457, -3.62158019253045, 0.00000000000000],
+                    [-2.51744374846065, +3.98181713686746, 0.00000000000000],
+                    [+2.24269048384775, +4.24389473203647, 0.00000000000000],
+                    [+4.66488984573956, +0.17907568006409, 0.00000000000000],
+                    [-4.60044244782237, -0.17794734637413, 0.00000000000000],
+                ],
+            },
+            driver="energy",
+            model={"method": ""},
+            keywords={},
+        )
+
+dftd3/test_qcschema.py:245: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <Unavailable QCSchema v1 model AtomicInput>, args = ()
+kwargs = {'driver': 'energy', 'keywords': {}, 'model': {'method': ''}, 'molecule': {'geometry': [[-2.56745685564671, -0.0250998...9890996077412, 0.0], [-1.17186102298849, -2.3422057628418, 0.0], ...], 'symbols': ['C', 'C', 'C', 'C', 'N', 'C', ...]}}
+
+    def __init__(self, *args, **kwargs):
+>       raise RuntimeError(_MSG2)
+E       RuntimeError: QCSchema v1 model 'AtomicInput' cannot be instantiated in this environment. Reason: pydantic.v1 is unavailable on Python 3.14+. Use qcelemental.models.v2 or run Python <3.14. See docs/MIGRATION.md
+
+/nix/store/p6p6fc0n3553synah6kx1zkmbh9vgv59-python3.14-qcelemental-0.50.0rc3/lib/python3.14/site-packages/qcelemental/models/v1/__init__.py:48: RuntimeError
+_____________________________ test_error_nomethod ______________________________
+
+    @pytest.mark.skipif(qcel is None, reason="requires qcelemental")
+    def test_error_nomethod():
+        thr = 1e-9
+    
+>       atomic_input = qcel.models.AtomicInput(
+            molecule={
+                "symbols": "C C C C N C S H H H H H".split(),
+                "geometry": [
+                    [-2.56745685564671, -0.02509985979910, 0.00000000000000],
+                    [-1.39177582455797, +2.27696188880014, 0.00000000000000],
+                    [+1.27784995624894, +2.45107479759386, 0.00000000000000],
+                    [+2.62801937615793, +0.25927727028120, 0.00000000000000],
+                    [+1.41097033661123, -1.99890996077412, 0.00000000000000],
+                    [-1.17186102298849, -2.34220576284180, 0.00000000000000],
+                    [-2.39505990368378, -5.22635838332362, 0.00000000000000],
+                    [+2.41961980455457, -3.62158019253045, 0.00000000000000],
+                    [-2.51744374846065, +3.98181713686746, 0.00000000000000],
+                    [+2.24269048384775, +4.24389473203647, 0.00000000000000],
+                    [+4.66488984573956, +0.17907568006409, 0.00000000000000],
+                    [-4.60044244782237, -0.17794734637413, 0.00000000000000],
+                ],
+            },
+            driver="energy",
+            model={
+                "method": "this-method-does-not-exist",
+            },
+            keywords={
+                "level_hint": "d3bj",
+            },
+        )
+
+dftd3/test_qcschema.py:278: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <Unavailable QCSchema v1 model AtomicInput>, args = ()
+kwargs = {'driver': 'energy', 'keywords': {'level_hint': 'd3bj'}, 'model': {'method': 'this-method-does-not-exist'}, 'molecule'...9890996077412, 0.0], [-1.17186102298849, -2.3422057628418, 0.0], ...], 'symbols': ['C', 'C', 'C', 'C', 'N', 'C', ...]}}
+
+    def __init__(self, *args, **kwargs):
+>       raise RuntimeError(_MSG2)
+E       RuntimeError: QCSchema v1 model 'AtomicInput' cannot be instantiated in this environment. Reason: pydantic.v1 is unavailable on Python 3.14+. Use qcelemental.models.v2 or run Python <3.14. See docs/MIGRATION.md
+
+/nix/store/p6p6fc0n3553synah6kx1zkmbh9vgv59-python3.14-qcelemental-0.50.0rc3/lib/python3.14/site-packages/qcelemental/models/v1/__init__.py:48: RuntimeError
+_______________________________ test_error_level _______________________________
+
+    @pytest.mark.skipif(qcel is None, reason="requires qcelemental")
+    def test_error_level():
+        thr = 1e-9
+    
+>       atomic_input = qcel.models.AtomicInput(
+            molecule={
+                "symbols": "C C C C N C S H H H H H".split(),
+                "geometry": [
+                    [-2.56745685564671, -0.02509985979910, 0.00000000000000],
+                    [-1.39177582455797, +2.27696188880014, 0.00000000000000],
+                    [+1.27784995624894, +2.45107479759386, 0.00000000000000],
+                    [+2.62801937615793, +0.25927727028120, 0.00000000000000],
+                    [+1.41097033661123, -1.99890996077412, 0.00000000000000],
+                    [-1.17186102298849, -2.34220576284180, 0.00000000000000],
+                    [-2.39505990368378, -5.22635838332362, 0.00000000000000],
+                    [+2.41961980455457, -3.62158019253045, 0.00000000000000],
+                    [-2.51744374846065, +3.98181713686746, 0.00000000000000],
+                    [+2.24269048384775, +4.24389473203647, 0.00000000000000],
+                    [+4.66488984573956, +0.17907568006409, 0.00000000000000],
+                    [-4.60044244782237, -0.17794734637413, 0.00000000000000],
+                ],
+            },
+            driver="energy",
+            model={
+                "method": "SCAN",
+            },
+            keywords={
+                "level_hint": "D42",
+            },
+        )
+
+dftd3/test_qcschema.py:319: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <Unavailable QCSchema v1 model AtomicInput>, args = ()
+kwargs = {'driver': 'energy', 'keywords': {'level_hint': 'D42'}, 'model': {'method': 'SCAN'}, 'molecule': {'geometry': [[-2.567...9890996077412, 0.0], [-1.17186102298849, -2.3422057628418, 0.0], ...], 'symbols': ['C', 'C', 'C', 'C', 'N', 'C', ...]}}
+
+    def __init__(self, *args, **kwargs):
+>       raise RuntimeError(_MSG2)
+E       RuntimeError: QCSchema v1 model 'AtomicInput' cannot be instantiated in this environment. Reason: pydantic.v1 is unavailable on Python 3.14+. Use qcelemental.models.v2 or run Python <3.14. See docs/MIGRATION.md
+
+/nix/store/p6p6fc0n3553synah6kx1zkmbh9vgv59-python3.14-qcelemental-0.50.0rc3/lib/python3.14/site-packages/qcelemental/models/v1/__init__.py:48: RuntimeError
+_____________________________ test_ghost_pbe_d3bj ______________________________
+
+    @pytest.mark.skipif(qcel is None, reason="requires qcelemental")
+    def test_ghost_pbe_d3bj():
+        thr = 1e-9
+    
+>       atomic_input = qcel.models.AtomicInput(
+            molecule={
+                "symbols": "Pb H H H H Bi H H H".split(),
+                "geometry": [
+                    [-0.00000020988889, -4.98043478877778, +0.00000000000000],
+                    [+3.06964045311111, -6.06324400177778, +0.00000000000000],
+                    [-1.53482054188889, -6.06324400177778, -2.65838526500000],
+                    [-1.53482054188889, -6.06324400177778, +2.65838526500000],
+                    [-0.00000020988889, -1.72196703577778, +0.00000000000000],
+                    [-0.00000020988889, +4.77334244722222, +0.00000000000000],
+                    [+1.35700257511111, +6.70626379422222, -2.35039772300000],
+                    [-2.71400388988889, +6.70626379422222, +0.00000000000000],
+                    [+1.35700257511111, +6.70626379422222, +2.35039772300000],
+                ],
+                "real": [True] * 5 + [False] * 4,
+            },
+            driver="gradient",
+            model={
+                "method": "pbe",
+            },
+        )
+
+dftd3/test_qcschema.py:360: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <Unavailable QCSchema v1 model AtomicInput>, args = ()
+kwargs = {'driver': 'gradient', 'model': {'method': 'pbe'}, 'molecule': {'geometry': [[-2.0988889e-07, -4.98043478877778, 0.0],...222, 0.0], ...], 'real': [True, True, True, True, True, False, ...], 'symbols': ['Pb', 'H', 'H', 'H', 'H', 'Bi', ...]}}
+
+    def __init__(self, *args, **kwargs):
+>       raise RuntimeError(_MSG2)
+E       RuntimeError: QCSchema v1 model 'AtomicInput' cannot be instantiated in this environment. Reason: pydantic.v1 is unavailable on Python 3.14+. Use qcelemental.models.v2 or run Python <3.14. See docs/MIGRATION.md
+
+/nix/store/p6p6fc0n3553synah6kx1zkmbh9vgv59-python3.14-qcelemental-0.50.0rc3/lib/python3.14/site-packages/qcelemental/models/v1/__init__.py:48: RuntimeError
+=============================== warnings summary ===============================
+dftd3/test_library.py:18
+  /build/source/python/dftd3/test_library.py:18: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+    from pkg_resources import parse_version
+
+../../../nix/store/p6p6fc0n3553synah6kx1zkmbh9vgv59-python3.14-qcelemental-0.50.0rc3/lib/python3.14/site-packages/qcelemental/models/__init__.py:13
+  /nix/store/p6p6fc0n3553synah6kx1zkmbh9vgv59-python3.14-qcelemental-0.50.0rc3/lib/python3.14/site-packages/qcelemental/models/__init__.py:13: FutureWarning: qcelemental.models.v1 is active but incompatible with Python 3.14+ (pydantic.v1 is not available). Imports will provide non-functional placeholders; instantiating any v1 model will raise a RuntimeError. Please run on Python < 3.14 or migrate to qcelemental.models.v2. See docs/MIGRATION.md
+    from . import v1, v2
+
+../../../nix/store/p6p6fc0n3553synah6kx1zkmbh9vgv59-python3.14-qcelemental-0.50.0rc3/lib/python3.14/site-packages/qcelemental/util/serialization.py:6
+  /nix/store/p6p6fc0n3553synah6kx1zkmbh9vgv59-python3.14-qcelemental-0.50.0rc3/lib/python3.14/site-packages/qcelemental/util/serialization.py:6: UserWarning: Core Pydantic V1 functionality isn't compatible with Python 3.14 or greater.
+    from pydantic.v1.json import pydantic_encoder
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED dftd3/test_qcschema.py::test_energy_r2scan_d3bj[True] - RuntimeError: QCSchema v1 model 'AtomicInput' cannot be instantiated in thi...
+FAILED dftd3/test_qcschema.py::test_energy_r2scan_d3bj[False] - RuntimeError: QCSchema v1 model 'AtomicInput' cannot be instantiated in thi...
+FAILED dftd3/test_qcschema.py::test_energy_bp_d3zero[True] - RuntimeError: QCSchema v1 model 'AtomicInput' cannot be instantiated in thi...
+FAILED dftd3/test_qcschema.py::test_energy_bp_d3zero[False] - RuntimeError: QCSchema v1 model 'AtomicInput' cannot be instantiated in thi...
+FAILED dftd3/test_qcschema.py::test_gradient_b97d_d3bj - RuntimeError: QCSchema v1 model 'AtomicInput' cannot be instantiated in thi...
+FAILED dftd3/test_qcschema.py::test_gradient_tpss_d3zero - RuntimeError: QCSchema v1 model 'AtomicInput' cannot be instantiated in thi...
+FAILED dftd3/test_qcschema.py::test_error_noargs - RuntimeError: QCSchema v1 model 'AtomicInput' cannot be instantiated in thi...
+FAILED dftd3/test_qcschema.py::test_error_nomethod - RuntimeError: QCSchema v1 model 'AtomicInput' cannot be instantiated in thi...
+FAILED dftd3/test_qcschema.py::test_error_level - RuntimeError: QCSchema v1 model 'AtomicInput' cannot be instantiated in thi...
+FAILED dftd3/test_qcschema.py::test_ghost_pbe_d3bj - RuntimeError: QCSchema v1 model 'AtomicInput' cannot be instantiated in thi...
+================== 10 failed, 35 passed, 3 warnings in 5.11s ===================
+error: builder for '/nix/store/8l7y6dpdg1gmrgndh3afgqyg7h0wfdir-python3.14-simple-dftd3-1.2.1.drv' failed with exit code 1
+@@@ [FAIL] @@@

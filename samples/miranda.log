@@ -1,0 +1,178 @@
+this derivation will be built:
+  /nix/store/0vvh8cc0fzwy981mj1jb6ab0cp2kdaj4-miranda-2.066.drv
+these 5 paths will be fetched (0.28 MiB download, 1.35 MiB unpacked):
+  /nix/store/56fpik7vqkkm9drcs0f56w6vb77f93pr-add-mkdirs-makefile.patch
+  /nix/store/5qk1lyy37wq1x1ws3p7a8f0blhg6vdm8-c-path-fixes.patch
+  /nix/store/08bbwkzhv5jqsqlqimyphhnqvpfl8jg6-deterministic-build.patch
+  /nix/store/5ckwjsqcqqlrrxgzknmrdrckkcxdw2qi-fix-makefile-variables.patch
+  /nix/store/dl6ahdcycmw4yry2zpmslq7w7i2mdlvk-source
+copying path '/nix/store/5qk1lyy37wq1x1ws3p7a8f0blhg6vdm8-c-path-fixes.patch' from 'https://cache.nixos.org'...
+copying path '/nix/store/56fpik7vqkkm9drcs0f56w6vb77f93pr-add-mkdirs-makefile.patch' from 'https://cache.nixos.org'...
+copying path '/nix/store/08bbwkzhv5jqsqlqimyphhnqvpfl8jg6-deterministic-build.patch' from 'https://cache.nixos.org'...
+copying path '/nix/store/5ckwjsqcqqlrrxgzknmrdrckkcxdw2qi-fix-makefile-variables.patch' from 'https://cache.nixos.org'...
+copying path '/nix/store/dl6ahdcycmw4yry2zpmslq7w7i2mdlvk-source' from 'https://cache.nixos.org'...
+building '/nix/store/0vvh8cc0fzwy981mj1jb6ab0cp2kdaj4-miranda-2.066.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/dl6ahdcycmw4yry2zpmslq7w7i2mdlvk-source
+source root is source
+Running phase: patchPhase
+applying patch /nix/store/5ckwjsqcqqlrrxgzknmrdrckkcxdw2qi-fix-makefile-variables.patch
+patching file Makefile
+patching file README
+applying patch /nix/store/56fpik7vqkkm9drcs0f56w6vb77f93pr-add-mkdirs-makefile.patch
+patching file Makefile
+applying patch /nix/store/5qk1lyy37wq1x1ws3p7a8f0blhg6vdm8-c-path-fixes.patch
+patching file Makefile
+patching file new/steer.c
+patching file steer.c
+patching file version.c
+applying patch /nix/store/08bbwkzhv5jqsqlqimyphhnqvpfl8jg6-deterministic-build.patch
+patching file Makefile
+patching file quotehostinfo
+patching script interpreter paths in quotehostinfo
+quotehostinfo: interpreter directive changed from "#!/bin/bash" to "/nix/store/v8sa6r6q037ihghxfbwzjj4p59v2x0pv-bash-5.3p9/bin/bash"
+substituteStream() in derivation miranda-2.066: WARNING: '--replace' is deprecated, use --replace-{fail,warn,quiet}. (file 'Makefile')
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+no configure script, doing nothing
+Running phase: buildPhase
+build flags: -j1 SHELL=/nix/store/v8sa6r6q037ihghxfbwzjj4p59v2x0pv-bash-5.3p9/bin/bash CC=cc CFLAGS=-O2 PREFIX=/nix/store/l068ycg50mqfi4bpj2b9waghqy8nvjv4-miranda-2.066
+cc -O2   -c -o big.o big.c
+In file included from big.c:12:
+data.h:246:7: error: conflicting types for 'getaka'; have 'char *(word)' {aka 'char *(long int)'}
+  246 | char *getaka(word);
+      |       ^~~~~~
+data.h:119:7: note: previous declaration of 'getaka' with type 'char *(void)'
+  119 | char *getaka();
+      |       ^~~~~~
+big.c: In function 'isnat':
+big.c:36:5: warning: old-style function definition [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition8;;]
+   36 | int isnat(x)
+      |     ^~~~~
+big.c: In function 'sto_int':
+big.c:41:6: warning: old-style function definition [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition8;;]
+   41 | word sto_int(i)  /* store C long long as mira bigint */
+      |      ^~~~~~~
+big.c: In function 'get_int':
+big.c:56:11: warning: old-style function definition [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition8;;]
+   56 | long long get_int(x) /* mira bigint to C long long */
+      |           ^~~~~~~
+big.c: In function 'bignegate':
+big.c:67:6: warning: old-style function definition [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition8;;]
+   67 | word bignegate(x)
+      |      ^~~~~~~~~
+big.c: In function 'bigplus':
+big.c:73:6: warning: old-style function definition [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition8;;]
+   73 | word bigplus(x,y)
+      |      ^~~~~~~
+big.c: In function 'big_plus':
+big.c:83:6: warning: old-style function definition [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition8;;]
+   83 | word big_plus(x,y,signbit) /* ignore input signs, treat x,y as positive */
+      |      ^~~~~~~~
+big.c: In function 'bigsub':
+big.c:105:6: warning: old-style function definition [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition8;;]
+  105 | word bigsub(x,y)
+      |      ^~~~~~
+big.c: In function 'big_sub':
+big.c:115:6: warning: old-style function definition [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition8;;]
+  115 | word big_sub(x,y) /* ignore input signs, treat x,y as positive */
+      |      ^~~~~~~
+big.c: In function 'bigcmp':
+big.c:161:5: warning: old-style function definition [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition8;;]
+  161 | int bigcmp(x,y)  /* returns +ve,0,-ve as x greater than, equal, less than y */
+      |     ^~~~~~
+big.c: In function 'bigtimes':
+big.c:175:6: warning: old-style function definition [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition8;;]
+  175 | word bigtimes(x,y) /* naive multiply - quadratic */
+      |      ^~~~~~~~
+big.c: In function 'shift':
+big.c:194:6: warning: old-style function definition [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition8;;]
+  194 | word shift(n,x) /* multiply big x by n'th power of IBASE */
+      |      ^~~~~
+big.c: In function 'stimes':
+big.c:200:6: warning: old-style function definition [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition8;;]
+  200 | word stimes(x,n)  /* multiply big x (>=0) by digit n (>0) */
+      |      ^~~~~~
+big.c: In function 'bigdiv':
+big.c:217:6: warning: old-style function definition [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition8;;]
+  217 | word bigdiv(x,y)  /* may assume y~=0 */
+      |      ^~~~~~
+big.c: In function 'bigmod':
+big.c:241:6: warning: old-style function definition [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition8;;]
+  241 | word bigmod(x,y)  /* may assume y~=0 */
+      |      ^~~~~~
+big.c: In function 'shortdiv':
+big.c:267:6: warning: old-style function definition [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition8;;]
+  267 | word shortdiv(x,n) /* divide big x by single digit n returning big quotient
+      |      ^~~~~~~~
+big.c: In function 'longdiv':
+big.c:286:6: warning: old-style function definition [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition8;;]
+  286 | word longdiv(x,y)  /* divide big x by big y returning quotient, leaving
+      |      ^~~~~~~
+big.c: In function 'len':
+big.c:320:6: warning: old-style function definition [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition8;;]
+  320 | word len(x) /* no of digits in big x */
+      |      ^~~
+big.c: In function 'msd':
+big.c:327:6: warning: old-style function definition [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition8;;]
+  327 | word msd(x) /* most significant digit of big x */
+      |      ^~~
+big.c: In function 'ms2d':
+big.c:333:6: warning: old-style function definition [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition8;;]
+  333 | word ms2d(x) /* most significant 2 digits of big x (len>=2) */
+      |      ^~~~
+big.c: In function 'bigpow':
+big.c:341:6: warning: old-style function definition [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition8;;]
+  341 | word bigpow(x,y)  /* assumes y poz */
+      |      ^~~~~~
+big.c: In function 'bigtodbl':
+big.c:361:8: warning: old-style function definition [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition8;;]
+  361 | double bigtodbl(x)
+      |        ^~~~~~~~
+big.c: In function 'dbltobig':
+big.c:385:6: warning: old-style function definition [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition8;;]
+  385 | word dbltobig(x)  /* entier */
+      |      ^~~~~~~~
+big.c: In function 'biglog':
+big.c:414:8: warning: old-style function definition [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition8;;]
+  414 | double biglog(x)  /* logarithm of big x */
+      |        ^~~~~~
+big.c: In function 'biglog10':
+big.c:423:8: warning: old-style function definition [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition8;;]
+  423 | double biglog10(x)  /* logarithm of big x */
+      |        ^~~~~~~~
+big.c: In function 'bigscan':
+big.c:432:6: warning: old-style function definition [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition8;;]
+  432 | word bigscan(p)  /* read a big number (in decimal) */
+      |      ^~~~~~~
+big.c: In function 'bigxscan':
+big.c:461:6: warning: old-style function definition [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition8;;]
+  461 | word bigxscan(p,q)  /* read unsigned hex number in '\0'-terminated string p to q */
+      |      ^~~~~~~~
+big.c: In function 'bigoscan':
+big.c:481:6: warning: old-style function definition [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition8;;]
+  481 | word bigoscan(p,q)  /* read unsigned octal number in '\0'-terminated string p to q */
+      |      ^~~~~~~~
+big.c: In function 'digitval':
+big.c:497:6: warning: old-style function definition [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition8;;]
+  497 | word digitval(c)
+      |      ^~~~~~~~
+big.c: In function 'strtobig':
+big.c:503:6: warning: old-style function definition [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition8;;]
+  503 | word strtobig(z,base) /* numeral (as Miranda string) to big number */
+      |      ^~~~~~~~
+big.c: In function 'bigtostr':
+big.c:534:6: warning: old-style function definition [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition8;;]
+  534 | word bigtostr(x) /* number to decimal string (as Miranda list) */
+      |      ^~~~~~~~
+big.c: In function 'bigtostrx':
+big.c:579:6: warning: old-style function definition [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition8;;]
+  579 | word bigtostrx(x) /* integer to hexadecimal string (as Miranda list) */
+      |      ^~~~~~~~~
+big.c: In function 'bigtostr8':
+big.c:602:6: warning: old-style function definition [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-old-style-definition-Wold-style-definition8;;]
+  602 | word bigtostr8(x) /* integer to octal string (as Miranda list) */
+      |      ^~~~~~~~~
+make: *** [<builtin>: big.o] Error 1
+error: builder for '/nix/store/0vvh8cc0fzwy981mj1jb6ab0cp2kdaj4-miranda-2.066.drv' failed with exit code 2
+@@@ [FAIL] @@@

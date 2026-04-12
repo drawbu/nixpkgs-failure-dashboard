@@ -1,0 +1,28 @@
+these 3 derivations will be built:
+  /nix/store/ss4r1bk0m1avb3sl24gsgjfjf4m2bm5y-source.drv
+  /nix/store/vc8zhpqjqbr82pbg1d3mrpwdsv4cqcv2-gprojector.desktop.drv
+  /nix/store/74ymchww2hcsxrvha0w781y7z8i3x63h-gprojector-3.1.0.drv
+building '/nix/store/vc8zhpqjqbr82pbg1d3mrpwdsv4cqcv2-gprojector.desktop.drv'...
+resolved derivation: '/nix/store/ss4r1bk0m1avb3sl24gsgjfjf4m2bm5y-source.drv' -> '/nix/store/iprr9zg4344nsgfi9rn2mj4awx6ny4h4-source.drv'...
+building '/nix/store/iprr9zg4344nsgfi9rn2mj4awx6ny4h4-source.drv'...
+structuredAttrs is enabled
+
+trying https://www.giss.nasa.gov/tools/gprojector/download/G.ProjectorJ-3.1.0.tgz
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0
+curl: (22) The requested URL returned error: 404
+Warning: Problem (retrying all errors). Will retry in 1 second. 3 retries left.
+  0      0   0      0   0      0      0      0                              0
+curl: (22) The requested URL returned error: 404
+Warning: Problem (retrying all errors). Will retry in 2 seconds. 2 retries 
+Warning: left.
+  0      0   0      0   0      0      0      0                              0
+curl: (22) The requested URL returned error: 404
+Warning: Problem (retrying all errors). Will retry in 4 seconds. 1 retry left.
+  0      0   0      0   0      0      0      0                              0
+curl: (22) The requested URL returned error: 404
+error: cannot download source from any mirror
+error: builder for '/nix/store/iprr9zg4344nsgfi9rn2mj4awx6ny4h4-source.drv' failed with exit code 1
+error: 1 dependencies of derivation '/nix/store/74ymchww2hcsxrvha0w781y7z8i3x63h-gprojector-3.1.0.drv' failed to build
+@@@ [FAIL] @@@

@@ -1,0 +1,40 @@
+these 3 derivations will be built:
+  /nix/store/0ak75xrhh4cwkib2jiqs340s0wrmj1h7-sbcl-cl-mpi-asdf-integration-20190710-git.drv
+  /nix/store/nnjr1qi91ixg0rv080svxwkd34hsgvbg-sbcl-cl-mpi-20190710-git.drv
+  /nix/store/zyqxgyc0x7gb9x5bxs3x2wvis39s1hly-sbcl-cl-mpi-examples-20190710-git.drv
+this path will be fetched (0.02 MiB download, 0.13 MiB unpacked):
+  /nix/store/473xnpjazf3zgc3m9gl9y56qwlazb356-source
+copying path '/nix/store/473xnpjazf3zgc3m9gl9y56qwlazb356-source' from 'https://cache.nixos.org'...
+waiting for lock on '/nix/store/519p57as2yd4pvijh0ni268s7zd7xvg5-sbcl-cl-mpi-asdf-integration-20190710-git'...
+waiting for lock on '/nix/store/6rxn83nv2m9qcavp7ikdss1rdvkr4xbi-sbcl-cl-mpi-20190710-git'...
+building '/nix/store/nnjr1qi91ixg0rv080svxwkd34hsgvbg-sbcl-cl-mpi-20190710-git.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/473xnpjazf3zgc3m9gl9y56qwlazb356-source
+source root is source
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+This is SBCL 2.6.1, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+* #<PACKAGE "NIX-CL-USER">
+* #<PACKAGE "NIX-CL-USER">
+* T
+* LOAD-SYSTEMS
+* ; compiling file "/nix/store/473xnpjazf3zgc3m9gl9y56qwlazb356-source/mpi/packages.lisp" (written 01 JAN 1970 12:00:01 AM):
+
+; wrote /build/source/mpi/packages-tmpGHU3ALSV.fasl
+; compilation finished in 0:00:00.004
+; mpicc -o /build/source/mpi/grovel__grovel-tmpAAURSO1.o -c -g -Wall -Wundef -Wsign-compare -Wpointer-arith -O3 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Wunused-parameter -fno-omit-frame-pointer -momit-leaf-frame-pointer -fPIC -I/nix/store/55g53i56hm1mhs2mn5my9ymqajdyxc8a-sbcl-cffi-grovel-20260101-git/ /build/source/mpi/grovel__grovel.c
+; 
+; compilation unit aborted
+;   caught 1 fatal ERROR condition
+BUILD FAILED: Couldn't execute "mpicc": No such file or directory
+error: builder for '/nix/store/nnjr1qi91ixg0rv080svxwkd34hsgvbg-sbcl-cl-mpi-20190710-git.drv' failed with exit code 1
+error: 1 dependencies of derivation '/nix/store/zyqxgyc0x7gb9x5bxs3x2wvis39s1hly-sbcl-cl-mpi-examples-20190710-git.drv' failed to build
+@@@ [FAIL] @@@

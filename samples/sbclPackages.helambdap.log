@@ -1,0 +1,98 @@
+these 4 derivations will be built:
+  /nix/store/svgxqfv2x47067a8zk0v60fbql9m7kc4-source.drv
+  /nix/store/hn1vfyfn0m4jirpiyscs7vygbn63n2j9-sbcl-xhtmlambda-20260101-git.drv
+  /nix/store/zs2d8gf6xmx0ly0f1skblsfjjs2830mn-source.drv
+  /nix/store/dgskdp59xjx990irw4ymbpip1s24ijvd-sbcl-helambdap-20260101-git.drv
+resolved derivation: '/nix/store/zs2d8gf6xmx0ly0f1skblsfjjs2830mn-source.drv' -> '/nix/store/4absm6pnhps10hf8qn6yng1mz80jgjf4-source.drv'...
+resolved derivation: '/nix/store/svgxqfv2x47067a8zk0v60fbql9m7kc4-source.drv' -> '/nix/store/9rpl6dqmpjc8mz3j1npwhdj1fz6pwa4j-source.drv'...
+building '/nix/store/4absm6pnhps10hf8qn6yng1mz80jgjf4-source.drv'...
+structuredAttrs is enabled
+
+trying https://beta.quicklisp.org/archive/helambdap/2026-01-01/helambdap-20260101-git.tgz
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+100 561.5k 100 561.5k   0      0 442.0k      0   00:01   00:01         112.0k
+unpacking source archive /build/helambdap-20260101-git.tgz
+building '/nix/store/9rpl6dqmpjc8mz3j1npwhdj1fz6pwa4j-source.drv'...
+structuredAttrs is enabled
+
+trying https://beta.quicklisp.org/archive/xhtmlambda/2026-01-01/xhtmlambda-20260101-git.tgz
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+100  54412 100  54412   0      0  86661      0                              0
+unpacking source archive /build/xhtmlambda-20260101-git.tgz
+building '/nix/store/hn1vfyfn0m4jirpiyscs7vygbn63n2j9-sbcl-xhtmlambda-20260101-git.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/c91v3g96s3n1kcryf4fbnw8mhqkw4vh5-source
+source root is source
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+This is SBCL 2.6.1, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+* #<PACKAGE "NIX-CL-USER">
+* #<PACKAGE "NIX-CL-USER">
+* T
+* LOAD-SYSTEMS
+* ;;; Computing Hangul syllable names
+; compiling file "/nix/store/c91v3g96s3n1kcryf4fbnw8mhqkw4vh5-source/xhtmlambda-pkg.lisp" (written 01 JAN 1970 12:00:01 AM):
+
+; wrote /build/source/xhtmlambda-pkg-tmpGHU3ALSV.fasl
+; compilation finished in 0:00:00.004
+; compiling file "/nix/store/c91v3g96s3n1kcryf4fbnw8mhqkw4vh5-source/xhtmlambda.lisp" (written 01 JAN 1970 12:00:01 AM):
+
+; wrote /build/source/xhtmlambda-tmpAAURSO1.fasl
+; compilation finished in 0:00:00.924
+; compiling file "/nix/store/c91v3g96s3n1kcryf4fbnw8mhqkw4vh5-source/utilities/streams-utilities.lisp" (written 01 JAN 1970 12:00:01 AM):
+
+; wrote /build/source/utilities/streams-utilities-tmp5GEXGEG5.fasl
+; compilation finished in 0:00:00.080
+; compiling file "/nix/store/c91v3g96s3n1kcryf4fbnw8mhqkw4vh5-source/xml-parser.lisp" (written 01 JAN 1970 12:00:01 AM):
+
+; wrote /build/source/xml-parser-tmpAR3FSGEY.fasl
+; compilation finished in 0:00:00.804
+Running phase: installPhase
+mkdir: created directory '/nix/store/7p70pv3fd1hkspw1wfl046canp7n4n1d-sbcl-xhtmlambda-20260101-git'
+Running phase: fixupPhase
+shrinking RPATHs of ELF executables and libraries in /nix/store/7p70pv3fd1hkspw1wfl046canp7n4n1d-sbcl-xhtmlambda-20260101-git
+checking for references to /build/ in /nix/store/7p70pv3fd1hkspw1wfl046canp7n4n1d-sbcl-xhtmlambda-20260101-git...
+building '/nix/store/dgskdp59xjx990irw4ymbpip1s24ijvd-sbcl-helambdap-20260101-git.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/5aazncrljr1r9khkwkf5l2gmq0877nlr-source
+source root is source
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+Running phase: buildPhase
+This is SBCL 2.6.1, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+* #<PACKAGE "NIX-CL-USER">
+* #<PACKAGE "NIX-CL-USER">
+* T
+* LOAD-SYSTEMS
+* ;;; Computing Hangul syllable names
+; compiling file "/nix/store/5aazncrljr1r9khkwkf5l2gmq0877nlr-source/helambdap-pkg.lisp" (written 01 JAN 1970 12:00:01 AM):
+
+; wrote /build/source/helambdap-pkg-tmpGHU3ALSV.fasl
+; compilation finished in 0:00:00.004
+; compiling file "/nix/store/5aazncrljr1r9khkwkf5l2gmq0877nlr-source/helambdap-globals.lisp" (written 01 JAN 1970 12:00:01 AM):
+
+; wrote /build/source/helambdap-globals-tmpAAURSO1.fasl
+; compilation finished in 0:00:00.008
+; 
+; compilation unit aborted
+;   caught 1 fatal ERROR condition
+BUILD FAILED: Can't create directory /homeless-shelter
+error: builder for '/nix/store/dgskdp59xjx990irw4ymbpip1s24ijvd-sbcl-helambdap-20260101-git.drv' failed with exit code 1
+@@@ [FAIL] @@@

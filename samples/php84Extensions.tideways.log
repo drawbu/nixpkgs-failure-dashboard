@@ -1,0 +1,22 @@
+error:
+       … while calling the 'derivationStrict' builtin
+         at <nix/derivation-internal.nix>:34:12:
+           33|
+           34|   strict = derivationStrict drvAttrs;
+             |            ^
+           35|
+
+       … while evaluating derivation 'tideways-php-5.20.0'
+         whose name attribute is located at /nix/store/xph6567b3wb9a68fqbk1dmzw4dh4ncbw-source/pkgs/stdenv/generic/make-derivation.nix:541:11
+
+       … while evaluating attribute 'installPhase' of derivation 'tideways-php-5.20.0'
+         at /nix/store/xph6567b3wb9a68fqbk1dmzw4dh4ncbw-source/pkgs/development/php-packages/tideways/default.nix:36:3:
+           35|
+           36|   installPhase = ''
+             |   ^
+           37|     runHook preInstall
+
+       (stack trace truncated; use '--show-trace' to show the full, detailed trace)
+
+       error: Unsupported PHP version.
+@@@ [FAIL] @@@

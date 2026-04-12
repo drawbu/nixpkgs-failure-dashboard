@@ -1,0 +1,339 @@
+these 3 derivations will be built:
+  /nix/store/ffk48vjg3zjlcvdp9x72867rvj8c6g19-python3.14-jfx-bridge-1.0.0.drv
+  /nix/store/rj4cj7dbcqv9q5dhphapb8qp0z2lm2gf-python3.14-ghidra-bridge-1.0.0.drv
+  /nix/store/9918j6nmp0l3kahimbsl403nj44bkj53-python3.14-libbs-3.3.0.drv
+building '/nix/store/ffk48vjg3zjlcvdp9x72867rvj8c6g19-python3.14-jfx-bridge-1.0.0.drv'...
+Sourcing python-remove-tests-dir-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing python-remove-bin-bytecode-hook.sh
+Sourcing pypa-build-hook
+Using pypaBuildPhase
+Sourcing python-runtime-deps-check-hook
+Using pythonRuntimeDepsCheckHook
+Sourcing pypa-install-hook
+Using pypaInstallPhase
+Sourcing python-imports-check-hook.sh
+Using pythonImportsCheckPhase
+Sourcing python-namespaces-hook
+Sourcing python-catch-conflicts-hook.sh
+Sourcing pytest-check-hook
+Using pytestCheckPhase
+Running phase: unpackPhase
+unpacking source archive /nix/store/hy6k6hg4vyj3qqrfzkc276123akv2jcp-source
+source root is source
+setting SOURCE_DATE_EPOCH to timestamp 315619200 of file "source/test_bridge_server.py"
+Running phase: patchPhase
+applying patch /nix/store/n5n6hqvscrsc8kdv4zi8ac7rxqnywhsm-no-invoke-git.patch
+patching file setup.py
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+no configure script, doing nothing
+Running phase: buildPhase
+Executing pypaBuildPhase
+Creating a wheel...
+pypa build flags: --no-isolation --outdir dist/ --wheel
+* Getting build dependencies for wheel...
+/nix/store/3zawkmdk3bs97lwkinfq5lsffikyh39d-python3.14-setuptools-80.10.1/lib/python3.14/site-packages/setuptools/dist.py:765: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+!!
+
+        ********************************************************************************
+        Please consider removing the following classifiers in favor of a SPDX license expression:
+
+        License :: OSI Approved :: MIT License
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  self._finalize_license_expression()
+running egg_info
+creating jfx_bridge.egg-info
+writing jfx_bridge.egg-info/PKG-INFO
+writing dependency_links to jfx_bridge.egg-info/dependency_links.txt
+writing top-level names to jfx_bridge.egg-info/top_level.txt
+writing manifest file 'jfx_bridge.egg-info/SOURCES.txt'
+reading manifest file 'jfx_bridge.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'jfx_bridge.egg-info/SOURCES.txt'
+* Building wheel...
+/nix/store/3zawkmdk3bs97lwkinfq5lsffikyh39d-python3.14-setuptools-80.10.1/lib/python3.14/site-packages/setuptools/dist.py:765: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+!!
+
+        ********************************************************************************
+        Please consider removing the following classifiers in favor of a SPDX license expression:
+
+        License :: OSI Approved :: MIT License
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  self._finalize_license_expression()
+running bdist_wheel
+running build
+running build_py
+creating build/lib/jfx_bridge
+copying jfx_bridge/test_bridge.py -> build/lib/jfx_bridge
+copying jfx_bridge/__init__.py -> build/lib/jfx_bridge
+copying jfx_bridge/bridge.py -> build/lib/jfx_bridge
+copying jfx_bridge/test_module.py -> build/lib/jfx_bridge
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/jfx_bridge
+copying build/lib/jfx_bridge/test_bridge.py -> build/bdist.linux-x86_64/wheel/./jfx_bridge
+copying build/lib/jfx_bridge/__init__.py -> build/bdist.linux-x86_64/wheel/./jfx_bridge
+copying build/lib/jfx_bridge/bridge.py -> build/bdist.linux-x86_64/wheel/./jfx_bridge
+copying build/lib/jfx_bridge/test_module.py -> build/bdist.linux-x86_64/wheel/./jfx_bridge
+running install_egg_info
+running egg_info
+writing jfx_bridge.egg-info/PKG-INFO
+writing dependency_links to jfx_bridge.egg-info/dependency_links.txt
+writing top-level names to jfx_bridge.egg-info/top_level.txt
+reading manifest file 'jfx_bridge.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'jfx_bridge.egg-info/SOURCES.txt'
+Copying jfx_bridge.egg-info to build/bdist.linux-x86_64/wheel/./jfx_bridge-1.0.0-py3.14.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/jfx_bridge-1.0.0.dist-info/WHEEL
+creating '/build/source/dist/.tmp-ufzdbqiq/jfx_bridge-1.0.0-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'jfx_bridge/__init__.py'
+adding 'jfx_bridge/bridge.py'
+adding 'jfx_bridge/test_bridge.py'
+adding 'jfx_bridge/test_module.py'
+adding 'jfx_bridge-1.0.0.dist-info/licenses/LICENSE'
+adding 'jfx_bridge-1.0.0.dist-info/METADATA'
+adding 'jfx_bridge-1.0.0.dist-info/WHEEL'
+adding 'jfx_bridge-1.0.0.dist-info/top_level.txt'
+adding 'jfx_bridge-1.0.0.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+Successfully built jfx_bridge-1.0.0-py3-none-any.whl
+Finished creating a wheel...
+Finished executing pypaBuildPhase
+Running phase: pythonRuntimeDepsCheckHook
+Executing pythonRuntimeDepsCheck
+Checking runtime dependencies for jfx_bridge-1.0.0-py3-none-any.whl
+Finished executing pythonRuntimeDepsCheck
+Running phase: installPhase
+Executing pypaInstallPhase
+Successfully installed jfx_bridge-1.0.0-py3-none-any.whl
+Finished executing pypaInstallPhase
+Running phase: pythonOutputDistPhase
+Executing pythonOutputDistPhase
+Finished executing pythonOutputDistPhase
+Running phase: fixupPhase
+shrinking RPATHs of ELF executables and libraries in /nix/store/c6mqqrgfr5ss8qlg6g6lbn4bj37dsdpz-python3.14-jfx-bridge-1.0.0
+checking for references to /build/ in /nix/store/c6mqqrgfr5ss8qlg6g6lbn4bj37dsdpz-python3.14-jfx-bridge-1.0.0...
+patching script interpreter paths in /nix/store/c6mqqrgfr5ss8qlg6g6lbn4bj37dsdpz-python3.14-jfx-bridge-1.0.0
+stripping (with command strip and flags -S -p) in  /nix/store/c6mqqrgfr5ss8qlg6g6lbn4bj37dsdpz-python3.14-jfx-bridge-1.0.0/lib
+shrinking RPATHs of ELF executables and libraries in /nix/store/m9dhzdvcvd3adyfvpmc5bb7lbavfhn7k-python3.14-jfx-bridge-1.0.0-dist
+checking for references to /build/ in /nix/store/m9dhzdvcvd3adyfvpmc5bb7lbavfhn7k-python3.14-jfx-bridge-1.0.0-dist...
+patching script interpreter paths in /nix/store/m9dhzdvcvd3adyfvpmc5bb7lbavfhn7k-python3.14-jfx-bridge-1.0.0-dist
+Executing pythonRemoveTestsDir
+Finished executing pythonRemoveTestsDir
+Running phase: installCheckPhase
+no Makefile or custom installCheckPhase, doing nothing
+Running phase: pythonCatchConflictsPhase
+Running phase: pythonRemoveBinBytecodePhase
+Running phase: pythonImportsCheckPhase
+Executing pythonImportsCheckPhase
+Check whether the following modules can be imported: jfx_bridge
+Running phase: pytestCheckPhase
+Executing pytestCheckPhase
+pytest flags: -m pytest -k not\ \(test_nonreturn_marker_local\)\ and\ not\ \(TestBridgeHookImport\)
+INFO:jfx_bridge.bridge:serving! (jfx_bridge v1.0.0, Python 3.14.3)
+============================= test session starts ==============================
+platform linux -- Python 3.14.3, pytest-9.0.2, pluggy-1.6.0
+rootdir: /build/source
+collected 61 items / 10 deselected / 51 selected                               
+
+jfx_bridge/test_bridge.py WARNING:jfx_bridge.bridge:Handling connection from ('127.0.0.1', 48756)
+.....s......s...Traceback (most recent call last):
+  File "/build/source/jfx_bridge/bridge.py", line 1003, in local_get
+    result = getattr(target, name)
+AttributeError: 're.Pattern' object has no attribute 'doesnt_exist'
+...........Traceback (most recent call last):
+  File "/build/source/jfx_bridge/bridge.py", line 1364, in local_eval
+    result = eval(eval_expr, eval_globals, eval_locals)
+  File "<string>", line 1, in <module>
+NameError: name 'x' is not defined
+...Traceback (most recent call last):
+  File "/build/source/jfx_bridge/bridge.py", line 1230, in local_create_type
+    result = type(name, bases, dct)
+TypeError: __classdictcell__ must be a nonlocal cell, not <class 'jfx_bridge.bridge._bridged_cell'>
+F.......Doubles
+Singles say "hi"
+Multis
+    are fine
+    
+....s... [ 90%]
+...sWARNING:jfx_bridge.bridge:Handling connection from ('127.0.0.1', 51344)
+INFO:jfx_bridge.bridge:Shutting down bridge
+INFO:jfx_bridge.bridge:stopped serving
+.                                                                    [100%]
+
+=================================== FAILURES ===================================
+______________________ TestBridge.test_remote_inheritance ______________________
+
+self = <jfx_bridge.test_bridge.TestBridge testMethod=test_remote_inheritance>
+
+    @print_stats
+    def test_remote_inheritance(self):
+        """check that we can inherit from a remote type"""
+        remote_collections = self.test_bridge.remote_import("collections")
+        remote_deque = remote_collections.deque
+    
+>       class new_deque(remote_deque):
+
+jfx_bridge/test_bridge.py:534: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+jfx_bridge/bridge.py:2089: in __new__
+    return bases[0]._bridge_conn.remote_create_type(name, bases, dct)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jfx_bridge/bridge.py:194: in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+jfx_bridge/bridge.py:1197: in remote_create_type
+    return self.deserialize_from_dict(self.send_cmd(command_dict))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <jfx_bridge.bridge.BridgeConn object at 0x7ffff578b4d0>
+serial_dict = {'message': {'type': 'str', 'value': ''}, 'type': 'exception', 'value': {'attrs': ['__cause__', '__class__', '__contex...r("__classdictcell__ must be a nonlocal cell, not <class \'jfx_bridge.bridge._bridged_cell\'>")', 'type': 'TypeError'}}
+
+    def deserialize_from_dict(self, serial_dict):
+        if serial_dict[TYPE] == INT:  # int, long
+            return int(serial_dict[VALUE])
+        elif serial_dict[TYPE] == FLOAT:
+            return float(serial_dict[VALUE])
+        elif serial_dict[TYPE] == BOOL:
+            return serial_dict[VALUE] == "True"
+        elif serial_dict[TYPE] == STR:
+            result = base64.b64decode(serial_dict[VALUE]).decode("utf-8")
+            # if we're in python 2, result is now a unicode string.
+            if sys.version_info[0] == 2:
+                try:
+                    # We'll try and force it down to a plain string, because there are plenty of cases where plain strings
+                    # are expected instead of unicode (e.g., type/module names). If that fails, we'll keep it as unicode.
+                    result = str(result)
+                except UnicodeEncodeError:
+                    # couldn't make it ascii, keep as unicode
+                    pass
+            return result
+    
+        elif serial_dict[TYPE] == BYTES:
+            return base64.b64decode(serial_dict[VALUE])
+        elif serial_dict[TYPE] == LIST:
+            return [self.deserialize_from_dict(v) for v in serial_dict[VALUE]]
+        elif serial_dict[TYPE] == TUPLE:
+            return tuple(self.deserialize_from_dict(v) for v in serial_dict[VALUE])
+        elif serial_dict[TYPE] == DICT:
+            result = dict()
+            for kv in serial_dict[VALUE]:
+                key = self.deserialize_from_dict(kv[KEY])
+                value = self.deserialize_from_dict(kv[VALUE])
+                result[key] = value
+    
+            return result
+        elif (
+            serial_dict[TYPE] == SLICE
+        ):  # we create local slice objects so isinstance(slice) in __getitem__/etc works
+            start, stop, step = [
+                self.deserialize_from_dict(v) for v in serial_dict[VALUE]
+            ]
+            result = slice(start, stop, step)
+            return result
+        elif serial_dict[TYPE] == EXCEPTION:
+>           raise BridgeException(
+                self.deserialize_from_dict(serial_dict[MESSAGE]),
+                self.build_bridged_object(serial_dict[VALUE]),
+E               jfx_bridge.bridge.BridgeException: ('', <_bridged_TypeError('TypeError("__classdictcell__ must be a nonlocal cell, not <class 'jfx_bridge.bridge._bridged_cell'>")', type=TypeError, handle=52c2163c-26d8-4928-9c01-e05f937974e2)>)
+
+jfx_bridge/bridge.py:903: BridgeException
+------------------------------ Captured log call -------------------------------
+DEBUG    jfx_bridge.bridge:bridge.py:1147 remote_import collections
+DEBUG    jfx_bridge.bridge:bridge.py:967 Sending {'v': 5, 'ID': '20ec04f4-49c0-4851-9b54-585475de1a41', 'type': 'cmd', 'cmd': {'cmd': 'import', 'args': {'name': 'collections'}}, 'respond': True}
+DEBUG    jfx_bridge.bridge:bridge.py:512 Recv loop received {'v': 5, 'ID': '20ec04f4-49c0-4851-9b54-585475de1a41', 'type': 'result', 'result': {'type': 'obj', 'value': {'handle': 'e3ab509f-38df-4dfd-9bc8-993bc06d4b67', 'type': 'module', 'attrs': ['ChainMap', 'Counter', 'OrderedDict', 'UserDict', 'UserList', 'UserString', '_Link', '_OrderedDictItemsView', '_OrderedDictKeysView', '_OrderedDictValuesView', '__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__path__', '__spec__', '_chain', '_collections_abc', '_count_elements', '_deque_iterator', '_eq', '_iskeyword', '_itemgetter', '_proxy', '_recursive_repr', '_repeat', '_starmap', '_sys', '_tuplegetter', 'abc', 'defaultdict', 'deque', 'heapq', 'namedtuple'], 'repr': "<module 'collections' from '/nix/store/qr0wqh2damb6asnyz4jkx61id5yg3qh2-python3-3.14.3/lib/python3.14/collections/__init__.py'>"}}}
+DEBUG    jfx_bridge.bridge:bridge.py:991 remote_get: e3ab509f-38df-4dfd-9bc8-993bc06d4b67.deque
+DEBUG    jfx_bridge.bridge:bridge.py:967 Sending {'v': 5, 'ID': '393d6f49-0e32-4ed4-8b1c-21f447d90900', 'type': 'cmd', 'cmd': {'cmd': 'get', 'args': {'handle': 'e3ab509f-38df-4dfd-9bc8-993bc06d4b67', 'name': 'deque'}}, 'respond': True}
+DEBUG    jfx_bridge.bridge:bridge.py:512 Recv loop received {'v': 5, 'ID': '393d6f49-0e32-4ed4-8b1c-21f447d90900', 'type': 'result', 'result': {'type': 'callable_obj', 'value': {'handle': '29752c03-2e06-4937-abf7-8b20e5b3b6a2', 'type': 'type', 'attrs': ['__add__', '__class__', '__class_getitem__', '__contains__', '__copy__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getstate__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__module__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'appendleft', 'clear', 'copy', 'count', 'extend', 'extendleft', 'index', 'insert', 'maxlen', 'pop', 'popleft', 'remove', 'reverse', 'rotate'], 'repr': "<class 'collections.deque'>"}}}
+DEBUG    jfx_bridge.bridge:bridge.py:1188 remote_create_type new_deque, (<BridgedCallable('<class 'collections.deque'>', type=type, handle=29752c03-2e06-4937-abf7-8b20e5b3b6a2)>,), {'__module__': 'jfx_bridge.test_bridge', '__qualname__': 'TestBridge.test_remote_inheritance.<locals>.new_deque', '__firstlineno__': 534, '__init__': <function TestBridge.test_remote_inheritance.<locals>.new_deque.__init__ at 0x7ffff55cf480>, 'append': <function TestBridge.test_remote_inheritance.<locals>.new_deque.append at 0x7ffff55cf530>, '__static_attributes__': ('called', 'test'), '__classdictcell__': <cell at 0x7ffff560b940: dict object at 0x7ffff55e78c0>}
+DEBUG    jfx_bridge.bridge:bridge.py:726 Handle created 28625a81-bb21-4f54-b001-d3f75629acc7 for <function TestBridge.test_remote_inheritance.<locals>.new_deque.__init__ at 0x7ffff55cf480>
+DEBUG    jfx_bridge.bridge:bridge.py:726 Handle created f08bcc75-70c6-4856-8bab-325dffe51ec1 for <function TestBridge.test_remote_inheritance.<locals>.new_deque.append at 0x7ffff55cf530>
+DEBUG    jfx_bridge.bridge:bridge.py:726 Handle created 5b1b3ae1-4829-414f-8a89-f90f31f8548a for <cell at 0x7ffff560b940: dict object at 0x7ffff55e78c0>
+DEBUG    jfx_bridge.bridge:bridge.py:967 Sending {'v': 5, 'ID': '2bb20434-38b3-4c48-b19a-c8fbdc2e2d53', 'type': 'cmd', 'cmd': {'cmd': 'create_type', 'args': {'name': 'new_deque', 'bases': {'type': 'tuple', 'value': [{'type': 'bridged', 'value': '29752c03-2e06-4937-abf7-8b20e5b3b6a2'}]}, 'dict': {'type': 'dict', 'value': [{'key': {'type': 'str', 'value': 'X19tb2R1bGVfXw=='}, 'value': {'type': 'str', 'value': 'amZ4X2JyaWRnZS50ZXN0X2JyaWRnZQ=='}}, {'key': {'type': 'str', 'value': 'X19xdWFsbmFtZV9f'}, 'value': {'type': 'str', 'value': 'VGVzdEJyaWRnZS50ZXN0X3JlbW90ZV9pbmhlcml0YW5jZS48bG9jYWxzPi5uZXdfZGVxdWU='}}, {'key': {'type': 'str', 'value': 'X19maXJzdGxpbmVub19f'}, 'value': {'type': 'int', 'value': '534'}}, {'key': {'type': 'str', 'value': 'X19pbml0X18='}, 'value': {'type': 'callable_obj', 'value': {'handle': '28625a81-bb21-4f54-b001-d3f75629acc7', 'type': 'function', 'attrs': ['__annotate__', '__annotations__', '__builtins__', '__call__', '__class__', '__closure__', '__code__', '__defaults__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__get__', '__getattribute__', '__getstate__', '__globals__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__kwdefaults__', '__le__', '__lt__', '__module__', '__name__', '__ne__', '__new__', '__qualname__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__type_params__'], 'repr': '<function TestBridge.test_remote_inheritance.<locals>.new_deque.__init__ at 0x7ffff55cf480>'}}}, {'key': {'type': 'str', 'value': 'YXBwZW5k'}, 'value': {'type': 'callable_obj', 'value': {'handle': 'f08bcc75-70c6-4856-8bab-325dffe51ec1', 'type': 'function', 'attrs': ['__annotate__', '__annotations__', '__builtins__', '__call__', '__class__', '__closure__', '__code__', '__defaults__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__get__', '__getattribute__', '__getstate__', '__globals__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__kwdefaults__', '__le__', '__lt__', '__module__', '__name__', '__ne__', '__new__', '__qualname__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__type_params__'], 'repr': '<function TestBridge.test_remote_inheritance.<locals>.new_deque.append at 0x7ffff55cf530>'}}}, {'key': {'type': 'str', 'value': 'X19zdGF0aWNfYXR0cmlidXRlc19f'}, 'value': {'type': 'tuple', 'value': [{'type': 'str', 'value': 'Y2FsbGVk'}, {'type': 'str', 'value': 'dGVzdA=='}]}}, {'key': {'type': 'str', 'value': 'X19jbGFzc2RpY3RjZWxsX18='}, 'value': {'type': 'obj', 'value': {'handle': '5b1b3ae1-4829-414f-8a89-f90f31f8548a', 'type': 'cell', 'attrs': ['__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'cell_contents'], 'repr': '<cell at 0x7ffff560b940: dict object at 0x7ffff55e78c0>'}}}]}}}, 'respond': True}
+DEBUG    jfx_bridge.bridge:bridge.py:512 Recv loop received {'v': 5, 'ID': 'fcb1e4b3-d229-4445-9246-7c9484f0f95b', 'type': 'cmd', 'cmd': {'cmd': 'type', 'args': {'handle': '5b1b3ae1-4829-414f-8a89-f90f31f8548a'}}, 'respond': True}
+DEBUG    jfx_bridge.bridge:bridge.py:1174 local_get_type 5b1b3ae1-4829-414f-8a89-f90f31f8548a
+DEBUG    jfx_bridge.bridge:bridge.py:726 Handle created 98717437-e507-4c9d-999f-662fd4dcd35f for <class 'cell'>
+DEBUG    jfx_bridge.bridge:bridge.py:1550 Responding with {'v': 5, 'ID': 'fcb1e4b3-d229-4445-9246-7c9484f0f95b', 'type': 'result', 'result': {'type': 'callable_obj', 'value': {'handle': '98717437-e507-4c9d-999f-662fd4dcd35f', 'type': 'type', 'attrs': ['__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'cell_contents'], 'repr': "<class 'cell'>"}}}
+DEBUG    jfx_bridge.bridge:bridge.py:512 Recv loop received {'v': 5, 'ID': '17b8ed9d-3e9e-4796-8323-8090be88fecf', 'type': 'cmd', 'cmd': {'cmd': 'get', 'args': {'handle': '98717437-e507-4c9d-999f-662fd4dcd35f', 'name': '__str__'}}, 'respond': True}
+DEBUG    jfx_bridge.bridge:bridge.py:999 local_get: 98717437-e507-4c9d-999f-662fd4dcd35f.__str__
+DEBUG    jfx_bridge.bridge:bridge.py:726 Handle created 7c050fa0-b37b-4c0c-9398-f0b4c43aae24 for <slot wrapper '__str__' of 'object' objects>
+DEBUG    jfx_bridge.bridge:bridge.py:1550 Responding with {'v': 5, 'ID': '17b8ed9d-3e9e-4796-8323-8090be88fecf', 'type': 'result', 'result': {'type': 'callable_obj', 'value': {'handle': '7c050fa0-b37b-4c0c-9398-f0b4c43aae24', 'type': 'wrapper_descriptor', 'attrs': ['__call__', '__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__get__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__name__', '__ne__', '__new__', '__objclass__', '__qualname__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__text_signature__'], 'repr': "<slot wrapper '__str__' of 'object' objects>"}}}
+DEBUG    jfx_bridge.bridge:bridge.py:512 Recv loop received {'v': 5, 'ID': '595df959-2b1f-4593-9c2b-62f1a09a2a9a', 'type': 'cmd', 'cmd': {'cmd': 'get', 'args': {'handle': '98717437-e507-4c9d-999f-662fd4dcd35f', 'name': '__hash__'}}, 'respond': True}
+DEBUG    jfx_bridge.bridge:bridge.py:999 local_get: 98717437-e507-4c9d-999f-662fd4dcd35f.__hash__
+DEBUG    jfx_bridge.bridge:bridge.py:1550 Responding with {'v': 5, 'ID': '595df959-2b1f-4593-9c2b-62f1a09a2a9a', 'type': 'result', 'result': {'type': 'none'}}
+DEBUG    jfx_bridge.bridge:bridge.py:512 Recv loop received {'v': 5, 'ID': '5fcb5f18-3412-413c-8e0f-67cd50cc49f0', 'type': 'cmd', 'cmd': {'cmd': 'get', 'args': {'handle': '98717437-e507-4c9d-999f-662fd4dcd35f', 'name': '__eq__'}}, 'respond': True}
+DEBUG    jfx_bridge.bridge:bridge.py:999 local_get: 98717437-e507-4c9d-999f-662fd4dcd35f.__eq__
+DEBUG    jfx_bridge.bridge:bridge.py:726 Handle created 49e4d0fc-fd2f-4ca0-b16a-d7cfd63e845b for <slot wrapper '__eq__' of 'cell' objects>
+DEBUG    jfx_bridge.bridge:bridge.py:1550 Responding with {'v': 5, 'ID': '5fcb5f18-3412-413c-8e0f-67cd50cc49f0', 'type': 'result', 'result': {'type': 'callable_obj', 'value': {'handle': '49e4d0fc-fd2f-4ca0-b16a-d7cfd63e845b', 'type': 'wrapper_descriptor', 'attrs': ['__call__', '__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__get__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__name__', '__ne__', '__new__', '__objclass__', '__qualname__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__text_signature__'], 'repr': "<slot wrapper '__eq__' of 'cell' objects>"}}}
+DEBUG    jfx_bridge.bridge:bridge.py:512 Recv loop received {'v': 5, 'ID': 'fb8618b2-3c22-40f3-bdea-918910e03f53', 'type': 'cmd', 'cmd': {'cmd': 'get', 'args': {'handle': '98717437-e507-4c9d-999f-662fd4dcd35f', 'name': '__ge__'}}, 'respond': True}
+DEBUG    jfx_bridge.bridge:bridge.py:999 local_get: 98717437-e507-4c9d-999f-662fd4dcd35f.__ge__
+DEBUG    jfx_bridge.bridge:bridge.py:726 Handle created b3d49f4c-084f-4583-91e5-e870247c4038 for <slot wrapper '__ge__' of 'cell' objects>
+DEBUG    jfx_bridge.bridge:bridge.py:1550 Responding with {'v': 5, 'ID': 'fb8618b2-3c22-40f3-bdea-918910e03f53', 'type': 'result', 'result': {'type': 'callable_obj', 'value': {'handle': 'b3d49f4c-084f-4583-91e5-e870247c4038', 'type': 'wrapper_descriptor', 'attrs': ['__call__', '__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__get__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__name__', '__ne__', '__new__', '__objclass__', '__qualname__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__text_signature__'], 'repr': "<slot wrapper '__ge__' of 'cell' objects>"}}}
+DEBUG    jfx_bridge.bridge:bridge.py:512 Recv loop received {'v': 5, 'ID': '811bf3de-62d0-4411-8d10-f9ef18594811', 'type': 'cmd', 'cmd': {'cmd': 'get', 'args': {'handle': '98717437-e507-4c9d-999f-662fd4dcd35f', 'name': '__gt__'}}, 'respond': True}
+DEBUG    jfx_bridge.bridge:bridge.py:999 local_get: 98717437-e507-4c9d-999f-662fd4dcd35f.__gt__
+DEBUG    jfx_bridge.bridge:bridge.py:726 Handle created c9b92302-04d6-4107-9149-e343505c58b9 for <slot wrapper '__gt__' of 'cell' objects>
+DEBUG    jfx_bridge.bridge:bridge.py:1550 Responding with {'v': 5, 'ID': '811bf3de-62d0-4411-8d10-f9ef18594811', 'type': 'result', 'result': {'type': 'callable_obj', 'value': {'handle': 'c9b92302-04d6-4107-9149-e343505c58b9', 'type': 'wrapper_descriptor', 'attrs': ['__call__', '__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__get__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__name__', '__ne__', '__new__', '__objclass__', '__qualname__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__text_signature__'], 'repr': "<slot wrapper '__gt__' of 'cell' objects>"}}}
+DEBUG    jfx_bridge.bridge:bridge.py:512 Recv loop received {'v': 5, 'ID': 'c5b43ff6-acaf-4839-adbb-785d27aab2b2', 'type': 'cmd', 'cmd': {'cmd': 'get', 'args': {'handle': '98717437-e507-4c9d-999f-662fd4dcd35f', 'name': '__le__'}}, 'respond': True}
+DEBUG    jfx_bridge.bridge:bridge.py:999 local_get: 98717437-e507-4c9d-999f-662fd4dcd35f.__le__
+DEBUG    jfx_bridge.bridge:bridge.py:726 Handle created 66f6b824-9ae8-4ccc-99a9-360ba2ef1c40 for <slot wrapper '__le__' of 'cell' objects>
+DEBUG    jfx_bridge.bridge:bridge.py:1550 Responding with {'v': 5, 'ID': 'c5b43ff6-acaf-4839-adbb-785d27aab2b2', 'type': 'result', 'result': {'type': 'callable_obj', 'value': {'handle': '66f6b824-9ae8-4ccc-99a9-360ba2ef1c40', 'type': 'wrapper_descriptor', 'attrs': ['__call__', '__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__get__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__name__', '__ne__', '__new__', '__objclass__', '__qualname__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__text_signature__'], 'repr': "<slot wrapper '__le__' of 'cell' objects>"}}}
+DEBUG    jfx_bridge.bridge:bridge.py:512 Recv loop received {'v': 5, 'ID': 'f37382d0-c370-4a0d-98f0-066fd0abb9d1', 'type': 'cmd', 'cmd': {'cmd': 'get', 'args': {'handle': '98717437-e507-4c9d-999f-662fd4dcd35f', 'name': '__lt__'}}, 'respond': True}
+DEBUG    jfx_bridge.bridge:bridge.py:999 local_get: 98717437-e507-4c9d-999f-662fd4dcd35f.__lt__
+DEBUG    jfx_bridge.bridge:bridge.py:726 Handle created a90c1bfc-43f3-4547-bd45-dba2ad38ed4c for <slot wrapper '__lt__' of 'cell' objects>
+DEBUG    jfx_bridge.bridge:bridge.py:1550 Responding with {'v': 5, 'ID': 'f37382d0-c370-4a0d-98f0-066fd0abb9d1', 'type': 'result', 'result': {'type': 'callable_obj', 'value': {'handle': 'a90c1bfc-43f3-4547-bd45-dba2ad38ed4c', 'type': 'wrapper_descriptor', 'attrs': ['__call__', '__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__get__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__name__', '__ne__', '__new__', '__objclass__', '__qualname__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__text_signature__'], 'repr': "<slot wrapper '__lt__' of 'cell' objects>"}}}
+DEBUG    jfx_bridge.bridge:bridge.py:512 Recv loop received {'v': 5, 'ID': 'ff1431e0-7716-4504-83d2-1becd8ebec7b', 'type': 'cmd', 'cmd': {'cmd': 'get', 'args': {'handle': '98717437-e507-4c9d-999f-662fd4dcd35f', 'name': '__ne__'}}, 'respond': True}
+DEBUG    jfx_bridge.bridge:bridge.py:999 local_get: 98717437-e507-4c9d-999f-662fd4dcd35f.__ne__
+DEBUG    jfx_bridge.bridge:bridge.py:726 Handle created e2e41352-b06e-41eb-9c9c-329a08ab7c9a for <slot wrapper '__ne__' of 'cell' objects>
+DEBUG    jfx_bridge.bridge:bridge.py:1550 Responding with {'v': 5, 'ID': 'ff1431e0-7716-4504-83d2-1becd8ebec7b', 'type': 'result', 'result': {'type': 'callable_obj', 'value': {'handle': 'e2e41352-b06e-41eb-9c9c-329a08ab7c9a', 'type': 'wrapper_descriptor', 'attrs': ['__call__', '__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__get__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__name__', '__ne__', '__new__', '__objclass__', '__qualname__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__text_signature__'], 'repr': "<slot wrapper '__ne__' of 'cell' objects>"}}}
+DEBUG    jfx_bridge.bridge:bridge.py:512 Recv loop received {'v': 5, 'ID': 'bba3c10c-02aa-4bd3-ac82-5d01255f9aea', 'type': 'cmd', 'cmd': {'cmd': 'del', 'args': {'handle': '98717437-e507-4c9d-999f-662fd4dcd35f'}}, 'respond': False}
+DEBUG    jfx_bridge.bridge:bridge.py:1142 local_del 98717437-e507-4c9d-999f-662fd4dcd35f
+DEBUG    jfx_bridge.bridge:bridge.py:512 Recv loop received {'v': 5, 'ID': '2bb20434-38b3-4c48-b19a-c8fbdc2e2d53', 'type': 'result', 'result': {'type': 'exception', 'value': {'handle': '52c2163c-26d8-4928-9c01-e05f937974e2', 'type': 'TypeError', 'attrs': ['__cause__', '__class__', '__context__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setstate__', '__sizeof__', '__str__', '__subclasshook__', '__suppress_context__', '__traceback__', 'add_note', 'args', 'with_traceback'], 'repr': 'TypeError("__classdictcell__ must be a nonlocal cell, not <class \'jfx_bridge.bridge._bridged_cell\'>")'}, 'message': {'type': 'str', 'value': ''}}}
+DEBUG    jfx_bridge.bridge:bridge.py:1579 Creating type TypeError
+DEBUG    jfx_bridge.bridge:bridge.py:1167 remote_get_type 52c2163c-26d8-4928-9c01-e05f937974e2
+DEBUG    jfx_bridge.bridge:bridge.py:967 Sending {'v': 5, 'ID': 'b33b7b69-3011-450c-8b51-b2e234e94216', 'type': 'cmd', 'cmd': {'cmd': 'type', 'args': {'handle': '52c2163c-26d8-4928-9c01-e05f937974e2'}}, 'respond': True}
+DEBUG    jfx_bridge.bridge:bridge.py:512 Recv loop received {'v': 5, 'ID': 'b33b7b69-3011-450c-8b51-b2e234e94216', 'type': 'result', 'result': {'type': 'callable_obj', 'value': {'handle': 'aa244ab8-98d8-48c6-a061-7549d27241dd', 'type': 'type', 'attrs': ['__cause__', '__class__', '__context__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setstate__', '__sizeof__', '__str__', '__subclasshook__', '__suppress_context__', '__traceback__', 'add_note', 'args', 'with_traceback'], 'repr': "<class 'TypeError'>"}}}
+DEBUG    jfx_bridge.bridge:bridge.py:991 remote_get: aa244ab8-98d8-48c6-a061-7549d27241dd.__str__
+DEBUG    jfx_bridge.bridge:bridge.py:967 Sending {'v': 5, 'ID': 'b0b91bad-b28c-444a-a9e5-35d86ae7dcc9', 'type': 'cmd', 'cmd': {'cmd': 'get', 'args': {'handle': 'aa244ab8-98d8-48c6-a061-7549d27241dd', 'name': '__str__'}}, 'respond': True}
+DEBUG    jfx_bridge.bridge:bridge.py:512 Recv loop received {'v': 5, 'ID': 'b0b91bad-b28c-444a-a9e5-35d86ae7dcc9', 'type': 'result', 'result': {'type': 'callable_obj', 'value': {'handle': '3d9530fc-bf66-4a5b-ad11-cca87590f7a0', 'type': 'wrapper_descriptor', 'attrs': ['__call__', '__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__get__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__name__', '__ne__', '__new__', '__objclass__', '__qualname__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__text_signature__'], 'repr': "<slot wrapper '__str__' of 'BaseException' objects>"}}}
+DEBUG    jfx_bridge.bridge:bridge.py:991 remote_get: aa244ab8-98d8-48c6-a061-7549d27241dd.__hash__
+DEBUG    jfx_bridge.bridge:bridge.py:967 Sending {'v': 5, 'ID': '735306a5-d6a7-4e2f-bd43-a927330ec056', 'type': 'cmd', 'cmd': {'cmd': 'get', 'args': {'handle': 'aa244ab8-98d8-48c6-a061-7549d27241dd', 'name': '__hash__'}}, 'respond': True}
+DEBUG    jfx_bridge.bridge:bridge.py:512 Recv loop received {'v': 5, 'ID': '735306a5-d6a7-4e2f-bd43-a927330ec056', 'type': 'result', 'result': {'type': 'callable_obj', 'value': {'handle': '91a5c05e-fc58-47e1-b8d3-6480e9de3237', 'type': 'wrapper_descriptor', 'attrs': ['__call__', '__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__get__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__name__', '__ne__', '__new__', '__objclass__', '__qualname__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__text_signature__'], 'repr': "<slot wrapper '__hash__' of 'object' objects>"}}}
+DEBUG    jfx_bridge.bridge:bridge.py:991 remote_get: aa244ab8-98d8-48c6-a061-7549d27241dd.__eq__
+DEBUG    jfx_bridge.bridge:bridge.py:967 Sending {'v': 5, 'ID': 'cd165e43-a589-4b6f-bda5-7d5d686ee943', 'type': 'cmd', 'cmd': {'cmd': 'get', 'args': {'handle': 'aa244ab8-98d8-48c6-a061-7549d27241dd', 'name': '__eq__'}}, 'respond': True}
+DEBUG    jfx_bridge.bridge:bridge.py:512 Recv loop received {'v': 5, 'ID': 'cd165e43-a589-4b6f-bda5-7d5d686ee943', 'type': 'result', 'result': {'type': 'callable_obj', 'value': {'handle': 'f8f45df2-63ab-4b72-bab0-092eebfc997c', 'type': 'wrapper_descriptor', 'attrs': ['__call__', '__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__get__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__name__', '__ne__', '__new__', '__objclass__', '__qualname__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__text_signature__'], 'repr': "<slot wrapper '__eq__' of 'object' objects>"}}}
+DEBUG    jfx_bridge.bridge:bridge.py:991 remote_get: aa244ab8-98d8-48c6-a061-7549d27241dd.__ge__
+DEBUG    jfx_bridge.bridge:bridge.py:967 Sending {'v': 5, 'ID': '46ee72da-04a6-42e7-a7e4-40d0fe2f9e62', 'type': 'cmd', 'cmd': {'cmd': 'get', 'args': {'handle': 'aa244ab8-98d8-48c6-a061-7549d27241dd', 'name': '__ge__'}}, 'respond': True}
+DEBUG    jfx_bridge.bridge:bridge.py:512 Recv loop received {'v': 5, 'ID': '46ee72da-04a6-42e7-a7e4-40d0fe2f9e62', 'type': 'result', 'result': {'type': 'callable_obj', 'value': {'handle': '2eba6f22-bafa-4ebb-8833-fc5be165b2d7', 'type': 'wrapper_descriptor', 'attrs': ['__call__', '__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__get__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__name__', '__ne__', '__new__', '__objclass__', '__qualname__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__text_signature__'], 'repr': "<slot wrapper '__ge__' of 'object' objects>"}}}
+DEBUG    jfx_bridge.bridge:bridge.py:991 remote_get: aa244ab8-98d8-48c6-a061-7549d27241dd.__gt__
+DEBUG    jfx_bridge.bridge:bridge.py:967 Sending {'v': 5, 'ID': 'e7ddbd1a-f71c-46ba-9243-6ff17e6d894b', 'type': 'cmd', 'cmd': {'cmd': 'get', 'args': {'handle': 'aa244ab8-98d8-48c6-a061-7549d27241dd', 'name': '__gt__'}}, 'respond': True}
+DEBUG    jfx_bridge.bridge:bridge.py:512 Recv loop received {'v': 5, 'ID': 'e7ddbd1a-f71c-46ba-9243-6ff17e6d894b', 'type': 'result', 'result': {'type': 'callable_obj', 'value': {'handle': '5f21a977-7c3f-4a12-abd0-2c5446711c51', 'type': 'wrapper_descriptor', 'attrs': ['__call__', '__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__get__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__name__', '__ne__', '__new__', '__objclass__', '__qualname__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__text_signature__'], 'repr': "<slot wrapper '__gt__' of 'object' objects>"}}}
+DEBUG    jfx_bridge.bridge:bridge.py:991 remote_get: aa244ab8-98d8-48c6-a061-7549d27241dd.__le__
+DEBUG    jfx_bridge.bridge:bridge.py:967 Sending {'v': 5, 'ID': '1cdc9d73-031d-4236-a18d-75a16f3de3f2', 'type': 'cmd', 'cmd': {'cmd': 'get', 'args': {'handle': 'aa244ab8-98d8-48c6-a061-7549d27241dd', 'name': '__le__'}}, 'respond': True}
+DEBUG    jfx_bridge.bridge:bridge.py:512 Recv loop received {'v': 5, 'ID': '1cdc9d73-031d-4236-a18d-75a16f3de3f2', 'type': 'result', 'result': {'type': 'callable_obj', 'value': {'handle': '47acf59b-78d2-4c0e-b272-a0cf0f3aae5c', 'type': 'wrapper_descriptor', 'attrs': ['__call__', '__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__get__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__name__', '__ne__', '__new__', '__objclass__', '__qualname__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__text_signature__'], 'repr': "<slot wrapper '__le__' of 'object' objects>"}}}
+DEBUG    jfx_bridge.bridge:bridge.py:991 remote_get: aa244ab8-98d8-48c6-a061-7549d27241dd.__lt__
+DEBUG    jfx_bridge.bridge:bridge.py:967 Sending {'v': 5, 'ID': '98e27e65-bb4a-442d-8ddb-9a533da96083', 'type': 'cmd', 'cmd': {'cmd': 'get', 'args': {'handle': 'aa244ab8-98d8-48c6-a061-7549d27241dd', 'name': '__lt__'}}, 'respond': True}
+DEBUG    jfx_bridge.bridge:bridge.py:512 Recv loop received {'v': 5, 'ID': '98e27e65-bb4a-442d-8ddb-9a533da96083', 'type': 'result', 'result': {'type': 'callable_obj', 'value': {'handle': '37dd4ae6-c29a-4536-b65d-eef2e167902d', 'type': 'wrapper_descriptor', 'attrs': ['__call__', '__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__get__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__name__', '__ne__', '__new__', '__objclass__', '__qualname__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__text_signature__'], 'repr': "<slot wrapper '__lt__' of 'object' objects>"}}}
+DEBUG    jfx_bridge.bridge:bridge.py:991 remote_get: aa244ab8-98d8-48c6-a061-7549d27241dd.__ne__
+DEBUG    jfx_bridge.bridge:bridge.py:967 Sending {'v': 5, 'ID': '2fc8f713-1718-4131-bb73-f0fc8a538fac', 'type': 'cmd', 'cmd': {'cmd': 'get', 'args': {'handle': 'aa244ab8-98d8-48c6-a061-7549d27241dd', 'name': '__ne__'}}, 'respond': True}
+DEBUG    jfx_bridge.bridge:bridge.py:512 Recv loop received {'v': 5, 'ID': '2fc8f713-1718-4131-bb73-f0fc8a538fac', 'type': 'result', 'result': {'type': 'callable_obj', 'value': {'handle': 'fe74b2cb-ac94-4bd6-b461-0e3d58e4f150', 'type': 'wrapper_descriptor', 'attrs': ['__call__', '__class__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__get__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__name__', '__ne__', '__new__', '__objclass__', '__qualname__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__text_signature__'], 'repr': "<slot wrapper '__ne__' of 'object' objects>"}}}
+DEBUG    jfx_bridge.bridge:bridge.py:1130 remote_del aa244ab8-98d8-48c6-a061-7549d27241dd
+DEBUG    jfx_bridge.bridge:bridge.py:967 Sending {'v': 5, 'ID': '0a42cb40-991a-4af2-bd34-85e7fcf3a3ff', 'type': 'cmd', 'cmd': {'cmd': 'del', 'args': {'handle': 'aa244ab8-98d8-48c6-a061-7549d27241dd'}}, 'respond': False}
+=========================== short test summary info ============================
+FAILED jfx_bridge/test_bridge.py::TestBridge::test_remote_inheritance - jfx_bridge.bridge.BridgeException: ('', <_bridged_TypeError('TypeError("__c...
+=========== 1 failed, 46 passed, 4 skipped, 10 deselected in 17.95s ============
+error: builder for '/nix/store/ffk48vjg3zjlcvdp9x72867rvj8c6g19-python3.14-jfx-bridge-1.0.0.drv' failed with exit code 1
+error: 1 dependencies of derivation '/nix/store/9918j6nmp0l3kahimbsl403nj44bkj53-python3.14-libbs-3.3.0.drv' failed to build
+@@@ [FAIL] @@@

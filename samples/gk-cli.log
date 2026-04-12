@@ -1,0 +1,35 @@
+these 2 derivations will be built:
+  /nix/store/z3yi1r1r208f4fxngpxswp8y4005hild-source.drv
+  /nix/store/knfgzxmimgzz1xglhw165c7b3c4g5mx7-gk-cli-3.0.9.drv
+resolved derivation: '/nix/store/z3yi1r1r208f4fxngpxswp8y4005hild-source.drv' -> '/nix/store/752lql5w3sf7k79ainmx9pwyzaankizj-source.drv'...
+building '/nix/store/752lql5w3sf7k79ainmx9pwyzaankizj-source.drv'...
+structuredAttrs is enabled
+
+trying https://github.com/gitkraken/gk-cli/releases/download/v3.0.9/gk_3.0.9_linux_amd64.zip
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0
+100 10.03M 100 10.03M   0      0 10.41M      0                              0
+unpacking source archive /build/gk_3.0.9_linux_amd64.zip
+building '/nix/store/knfgzxmimgzz1xglhw165c7b3c4g5mx7-gk-cli-3.0.9.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/nyjsiww84gnkj2f73zmvnq4vb9r5hfnz-source
+source root is source
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+no configure script, doing nothing
+Running phase: buildPhase
+no Makefile or custom buildPhase, doing nothing
+Running phase: installPhase
+Running phase: fixupPhase
+shrinking RPATHs of ELF executables and libraries in /nix/store/ahlk691n39lflrncrm546caig945dik7-gk-cli-3.0.9
+shrinking /nix/store/ahlk691n39lflrncrm546caig945dik7-gk-cli-3.0.9/bin/.gk-wrapped
+patchelf: cannot find section '.dynamic'. The input file is most likely statically linked
+checking for references to /build/ in /nix/store/ahlk691n39lflrncrm546caig945dik7-gk-cli-3.0.9...
+patchelf: cannot find section '.dynamic'. The input file is most likely statically linked
+patching script interpreter paths in /nix/store/ahlk691n39lflrncrm546caig945dik7-gk-cli-3.0.9
+stripping (with command strip and flags -S -p) in  /nix/store/ahlk691n39lflrncrm546caig945dik7-gk-cli-3.0.9/bin
+Running phase: installCheckPhase
+error: builder for '/nix/store/knfgzxmimgzz1xglhw165c7b3c4g5mx7-gk-cli-3.0.9.drv' failed with exit code 1
+@@@ [FAIL] @@@

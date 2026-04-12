@@ -83,6 +83,8 @@ python3Packages.buildPythonApplication (finalAttrs: {
   '';
 
   postInstall = ''
+    rm $out/bin/dummy-setup # for dev purposes
+
     install -Dm 0755 build-all-packages.sh $out/bin/build-all-packages
     install -Dm 0755 run-build.sh $out/bin/run-build
     install -Dm 0644 collect-packages.nix $out/share/collect-packages.nix

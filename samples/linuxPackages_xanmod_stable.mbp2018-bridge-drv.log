@@ -1,0 +1,53 @@
+this derivation will be built:
+  /nix/store/sf3npp074ccyi4kiwqlczj4avrfll36v-mbp2018-bridge-drv-2020-01-31.drv
+building '/nix/store/sf3npp074ccyi4kiwqlczj4avrfll36v-mbp2018-bridge-drv-2020-01-31.drv'...
+Running phase: unpackPhase
+unpacking source archive /nix/store/061bmzk1n4g3bd2mcyckaxil69f7jlqj-source
+source root is source
+Running phase: patchPhase
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+Running phase: configurePhase
+no configure script, doing nothing
+Running phase: buildPhase
+make: Entering directory '/nix/store/w7fz7z0m6gfvk3bdpvsyr81xad85iiqc-linux-xanmod-6.19.11-dev/lib/modules/6.19.11-xanmod1/build'
+make[1]: Entering directory '/build/source'
+  CC [M]  pci.o
+In file included from /nix/store/w7fz7z0m6gfvk3bdpvsyr81xad85iiqc-linux-xanmod-6.19.11-dev/lib/modules/6.19.11-xanmod1/source/include/linux/printk.h:6,
+                 from /nix/store/w7fz7z0m6gfvk3bdpvsyr81xad85iiqc-linux-xanmod-6.19.11-dev/lib/modules/6.19.11-xanmod1/source/include/asm-generic/bug.h:31,
+                 from /nix/store/w7fz7z0m6gfvk3bdpvsyr81xad85iiqc-linux-xanmod-6.19.11-dev/lib/modules/6.19.11-xanmod1/source/arch/x86/include/asm/bug.h:193,
+                 from /nix/store/w7fz7z0m6gfvk3bdpvsyr81xad85iiqc-linux-xanmod-6.19.11-dev/lib/modules/6.19.11-xanmod1/source/include/linux/bug.h:5,
+                 from /nix/store/w7fz7z0m6gfvk3bdpvsyr81xad85iiqc-linux-xanmod-6.19.11-dev/lib/modules/6.19.11-xanmod1/source/include/linux/fortify-string.h:6,
+                 from /nix/store/w7fz7z0m6gfvk3bdpvsyr81xad85iiqc-linux-xanmod-6.19.11-dev/lib/modules/6.19.11-xanmod1/source/include/linux/string.h:386,
+                 from /nix/store/w7fz7z0m6gfvk3bdpvsyr81xad85iiqc-linux-xanmod-6.19.11-dev/lib/modules/6.19.11-xanmod1/source/include/linux/uuid.h:11,
+                 from /nix/store/w7fz7z0m6gfvk3bdpvsyr81xad85iiqc-linux-xanmod-6.19.11-dev/lib/modules/6.19.11-xanmod1/source/include/linux/mod_devicetable.h:14,
+                 from /nix/store/w7fz7z0m6gfvk3bdpvsyr81xad85iiqc-linux-xanmod-6.19.11-dev/lib/modules/6.19.11-xanmod1/source/include/linux/pci.h:27,
+                 from pci.h:3,
+                 from pci.c:1:
+pci.c: In function 'bce_module_init':
+/nix/store/w7fz7z0m6gfvk3bdpvsyr81xad85iiqc-linux-xanmod-6.19.11-dev/lib/modules/6.19.11-xanmod1/source/include/linux/init.h:174:22: error: passing argument 1 of 'class_create' from incompatible pointer type [8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types8;;]
+  174 | #define THIS_MODULE (&__this_module)
+      |                     ~^~~~~~~~~~~~~~~
+      |                      |
+      |                      struct module *
+pci.c:393:30: note: in expansion of macro 'THIS_MODULE'
+  393 |     bce_class = class_create(THIS_MODULE, "bce");
+      |                              ^~~~~~~~~~~
+In file included from /nix/store/w7fz7z0m6gfvk3bdpvsyr81xad85iiqc-linux-xanmod-6.19.11-dev/lib/modules/6.19.11-xanmod1/source/include/linux/device.h:30,
+                 from /nix/store/w7fz7z0m6gfvk3bdpvsyr81xad85iiqc-linux-xanmod-6.19.11-dev/lib/modules/6.19.11-xanmod1/source/include/linux/pci.h:37:
+/nix/store/w7fz7z0m6gfvk3bdpvsyr81xad85iiqc-linux-xanmod-6.19.11-dev/lib/modules/6.19.11-xanmod1/source/include/linux/device/class.h:226:54: note: expected 'const char *' but argument is of type 'struct module *'
+  226 | struct class * __must_check class_create(const char *name);
+      |                                          ~~~~~~~~~~~~^~~~
+pci.c:393:17: error: too many arguments to function 'class_create'; expected 1, have 2
+  393 |     bce_class = class_create(THIS_MODULE, "bce");
+      |                 ^~~~~~~~~~~~              ~~~~~
+/nix/store/w7fz7z0m6gfvk3bdpvsyr81xad85iiqc-linux-xanmod-6.19.11-dev/lib/modules/6.19.11-xanmod1/source/include/linux/device/class.h:226:29: note: declared here
+  226 | struct class * __must_check class_create(const char *name);
+      |                             ^~~~~~~~~~~~
+make[3]: *** [/nix/store/w7fz7z0m6gfvk3bdpvsyr81xad85iiqc-linux-xanmod-6.19.11-dev/lib/modules/6.19.11-xanmod1/source/scripts/Makefile.build:289: pci.o] Error 1
+make[2]: *** [/nix/store/w7fz7z0m6gfvk3bdpvsyr81xad85iiqc-linux-xanmod-6.19.11-dev/lib/modules/6.19.11-xanmod1/source/Makefile:2070: .] Error 2
+make[1]: *** [/nix/store/w7fz7z0m6gfvk3bdpvsyr81xad85iiqc-linux-xanmod-6.19.11-dev/lib/modules/6.19.11-xanmod1/source/Makefile:248: __sub-make] Error 2
+make[1]: Leaving directory '/build/source'
+make: *** [/nix/store/w7fz7z0m6gfvk3bdpvsyr81xad85iiqc-linux-xanmod-6.19.11-dev/lib/modules/6.19.11-xanmod1/source/Makefile:248: __sub-make] Error 2
+make: Leaving directory '/nix/store/w7fz7z0m6gfvk3bdpvsyr81xad85iiqc-linux-xanmod-6.19.11-dev/lib/modules/6.19.11-xanmod1/build'
+error: builder for '/nix/store/sf3npp074ccyi4kiwqlczj4avrfll36v-mbp2018-bridge-drv-2020-01-31.drv' failed with exit code 2
+@@@ [FAIL] @@@
