@@ -30,7 +30,6 @@ if [ ! -f ".run" ]; then
         config = {
           allowAliases = false;
           allowUnfree = true;
-          cudaSupport = true;
           recursionMode = \"hydra\";
         };
       };
